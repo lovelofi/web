@@ -1,42 +1,39 @@
-# sv
+# LoveLofi Web
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Marketing & landing page for the [LoveLofi](https://lovelofi.app) browser extension — a lo-fi radio player with real-time audio effects.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Interactive Audio Demo** — Try all 12 audio effects live in the browser (no install needed), powered by Web Audio API + inline AudioWorklet processors
+- **Preset Showcase** — 9 curated presets with 1:1 effect parity with the extension
+- **Pricing & Plans** — Free, Monthly, Annual, and Lifetime tiers
+- **Documentation** — Getting started guide, effects reference, and keyboard shortcuts
+- **Theming** — 4 themes with semantic design tokens matching the extension
+- **Policy Pages** — Privacy policy, terms of service, and changelog
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Tech Stack
 
-To recreate this project with the same configuration:
+- [SvelteKit](https://kit.svelte.dev) (Svelte 5 with runes)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Cloudflare Pages](https://pages.cloudflare.com) via `@sveltejs/adapter-cloudflare`
+- [Lucide](https://lucide.dev) icons
 
-```sh
-# recreate this project
-npx sv@0.12.7 create --template minimal --types ts --no-install .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Development
 
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
+pnpm dev
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```sh
-npm run build
+pnpm build
+pnpm preview  # preview production build locally
 ```
 
-You can preview the production build with `npm run preview`.
+## Type Checking
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+pnpm check
+```
