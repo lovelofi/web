@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "updatedAt": "2026-03-15T12:00:00Z",
+  "featuredStationIds": [
+    "somafm-fluid",
+    "somafm-dronezone",
+    "jazz24",
+    "nightride-chillsynth"
+  ],
+  "overrides": [
+    {
+      "id": "box-lofi",
+      "disabled": true
+    },
+    {
+      "id": "radio-record-lofi",
+      "streamUrl": "https://new-host.example/lofi.aacp",
+      "backupUrl": "https://backup-host.example/lofi.aacp"
+    }
+  ],
+  "additions": [
+    {
+      "id": "new-station-id",
+      "name": "New Station",
+      "genre": "ambient",
+      "streamUrl": "https://example.com/stream",
+      "backupUrl": "https://backup.example.com/stream",
+      "tier": "premium",
+      "adFree": true
+    }
+  ]
+}

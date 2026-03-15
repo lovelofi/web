@@ -47,6 +47,9 @@
 					<strong>Free tier:</strong> 3 curated stations.<br />
 					<strong>Premium:</strong> Full station library + up to 10 custom stations via direct Icecast/Shoutcast URLs.
 				</p>
+				<p>
+					The built-in station catalog can also be refreshed remotely, which lets LoveLofi replace dead streams and improve the lineup without waiting for a browser store release.
+				</p>
 				<h3 class="mt-6 font-semibold text-ink">Adding Custom Stations</h3>
 				<p>
 					Premium users can add custom stations by providing a direct stream URL (Icecast or Shoutcast format).

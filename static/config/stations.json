@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-15T00:00:00Z",
+  "featuredStationIds": [
+    "somafm-fluid",
+    "somafm-groovesalad",
+    "somafm-dronezone",
+    "somafm-illstreet",
+    "nightride-chillsynth",
+    "nightride-nightride",
+    "jazz24"
+  ],
+  "overrides": [],
+  "additions": []
+}
