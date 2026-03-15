@@ -44,7 +44,7 @@
 					lo-fi hip-hop, chillhop, jazz, ambient, synthwave, and chill-out.
 				</p>
 				<p>
-					<strong>Free tier:</strong> 3 curated stations.<br />
+					<strong>Free tier:</strong> 6 curated stations.<br />
 					<strong>Premium:</strong> Full station library + up to 10 custom stations via direct Icecast/Shoutcast URLs.
 				</p>
 				<p>

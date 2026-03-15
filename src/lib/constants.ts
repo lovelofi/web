@@ -12,7 +12,7 @@ export const PLANS = [
 		period: 'forever',
 		description: 'Get started with lo-fi basics',
 		features: [
-			'3 curated radio stations',
+			'6 curated radio stations',
 			'Low-Pass Filter & Reverb effects',
 			'4 built-in presets',
 			'5 favorite stations',
@@ -73,7 +73,7 @@ export const FAQ_ITEMS = [
 	},
 	{
 		q: 'What effects are included for free?',
-		a: 'The free tier includes Low-Pass Filter and Reverb effects, 4 built-in presets (Sunday Morning, Late Night Study, Rainy Cafe, Dreamy), and 3 curated radio stations.',
+		a: 'The free tier includes Low-Pass Filter and Reverb effects, 4 built-in presets (Sunday Morning, Late Night Study, Rainy Cafe, Dreamy), and 6 curated radio stations.',
 	},
 	{
 		q: 'What does "Tab Audio" mode do?',

@@ -5,7 +5,7 @@ Marketing & landing page for the [LoveLofi](https://lovelofi.app) browser extens
 ## Features
 
 - **Interactive Audio Demo** — Try all 12 audio effects live in the browser (no install needed), powered by Web Audio API + inline AudioWorklet processors
-- **Preset Showcase** — 9 curated presets with 1:1 effect parity with the extension
+- **Preset Showcase** — a curated set of featured presets from the extension
 - **Pricing & Plans** — Free, Monthly, Annual, and Lifetime tiers
 - **Documentation** — Getting started guide, effects reference, and keyboard shortcuts
 - **Theming** — 4 themes with semantic design tokens matching the extension

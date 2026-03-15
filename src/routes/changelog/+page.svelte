@@ -23,7 +23,7 @@
 					<ul class="mt-1 list-disc space-y-1 pl-5">
 						<li>Lo-fi radio player with 20+ curated stations across 7 genres</li>
 						<li>12 real-time audio effects with Web Audio API</li>
-						<li>20+ built-in presets (Sunday Morning, Late Night Study, Rainy Cafe, and more)</li>
+						<li>20+ built-in presets in the extension, plus a curated featured preset demo on the web</li>
 						<li>Tab audio capture — apply effects to any browser tab</li>
 						<li>16 themes in 8 light/dark pairs</li>
 						<li>Custom presets and custom stations (premium)</li>
