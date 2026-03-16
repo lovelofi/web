@@ -1,0 +1,6 @@
+name = "lovelofi-web"
+compatibility_date = "2026-03-16"
+
+[[send_email]]
+name = "UNINSTALL_EMAIL"
+destination_address = "lovelofiapp@gmail.com"

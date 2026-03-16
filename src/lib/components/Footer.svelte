@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Radio, Heart } from 'lucide-svelte';
-	import { CHROME_STORE_URL, FIREFOX_STORE_URL, DISCORD_URL } from '$lib/constants';
+	import { CHROME_STORE_URL, FIREFOX_STORE_URL, DISCORD_URL, SUPPORT_URL } from '$lib/constants';
 </script>
 
 <footer class="border-t border-border bg-surface-1">
@@ -34,6 +34,7 @@
 				<h3 class="mb-3 text-sm font-semibold text-ink">Resources</h3>
 				<ul class="space-y-2 text-sm text-ink-tertiary">
 					<li><a href="/docs" class="hover:text-accent">Documentation</a></li>
+					<li><a href={SUPPORT_URL} class="hover:text-accent">Support</a></li>
 					<li>
 						<a href={DISCORD_URL} target="_blank" rel="noopener" class="hover:text-accent">Discord</a>
 					</li>

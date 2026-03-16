@@ -32,6 +32,18 @@ pnpm build
 pnpm preview  # preview production build locally
 ```
 
+## Cloudflare Email Binding
+
+The uninstall feedback and support forms post to `/api/uninstall-feedback` and `/api/support`
+and send mail through a Cloudflare `send_email` binding configured in
+[`wrangler.toml`](./wrangler.toml).
+
+Before deploying, make sure:
+
+- Email Routing is enabled for `lovelofi.app`
+- `lovelofiapp@gmail.com` is a verified destination address
+- `feedback@lovelofi.app` is available as the sender address
+
 ## Type Checking
 
 ```sh
