@@ -26,8 +26,8 @@
 		<section>
 			<h2 class="text-lg font-semibold text-ink">3. Free and Premium Tiers</h2>
 			<p class="mt-2">
-				The free tier provides limited access to radio stations, effects, and themes. Premium
-				features are unlocked through a paid subscription (monthly, annual) or a one-time
+				The free tier provides a curated starter set of stations, presets, and core lo-fi effects.
+				Premium features are unlocked through a paid subscription (monthly, annual) or a one-time
 				lifetime purchase via Polar.sh.
 			</p>
 		</section>
@@ -61,7 +61,16 @@
 		</section>
 
 		<section>
-			<h2 class="text-lg font-semibold text-ink">7. Limitation of Liability</h2>
+			<h2 class="text-lg font-semibold text-ink">7. Product Analytics</h2>
+			<p class="mt-2">
+				We may collect anonymous product usage analytics to understand feature usage, improve the
+				Service, and evaluate the premium experience. These analytics are described in more detail
+				in our Privacy Policy.
+			</p>
+		</section>
+
+		<section>
+			<h2 class="text-lg font-semibold text-ink">8. Limitation of Liability</h2>
 			<p class="mt-2">
 				LoveLofi is provided "as is" without warranties of any kind. We are not liable for any
 				damages arising from your use of the Service, including but not limited to interruptions
@@ -70,7 +79,7 @@
 		</section>
 
 		<section>
-			<h2 class="text-lg font-semibold text-ink">8. Changes to Terms</h2>
+			<h2 class="text-lg font-semibold text-ink">9. Changes to Terms</h2>
 			<p class="mt-2">
 				We may update these terms from time to time. Continued use of the Service after changes
 				constitutes acceptance of the new terms. We will update the "Last updated" date above
@@ -79,7 +88,7 @@
 		</section>
 
 		<section>
-			<h2 class="text-lg font-semibold text-ink">9. Contact</h2>
+			<h2 class="text-lg font-semibold text-ink">10. Contact</h2>
 			<p class="mt-2">
 				For questions about these terms, reach out via our
 				<a href="https://discord.gg/lovelofi" class="text-accent hover:underline">Discord server</a>.

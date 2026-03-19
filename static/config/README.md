@@ -50,7 +50,7 @@ Only known station IDs will be used.
 [
   "somafm-fluid",
   "somafm-dronezone",
-  "jazz24"
+  "fluxfm-chillhop"
 ]
 ```
 
@@ -72,7 +72,6 @@ Only known station IDs will be used.
 
 - `lo-fi-hip-hop`
 - `chillhop`
-- `jazz`
 - `ambient`
 - `synthwave`
 - `chill-out`

@@ -11,6 +11,8 @@ declare global {
 				UNINSTALL_EMAIL?: {
 					send(message: unknown): Promise<void>;
 				};
+				POSTHOG_API_KEY?: string;
+				POSTHOG_HOST?: string;
 			};
 		}
 	}

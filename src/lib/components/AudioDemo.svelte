@@ -186,7 +186,7 @@
 		</div>
 
 		<p class="mt-4 text-center text-xs text-ink-muted">
-			The extension includes 20+ presets, tab audio mode, and keyboard shortcuts.
+			The extension includes 27 presets, the full 30-station library, tab audio mode, and keyboard shortcuts.
 		</p>
 	</div>
 </section>

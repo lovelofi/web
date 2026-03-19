@@ -27,7 +27,7 @@
 		{
 			title: 'Start With Lo-Fi Radio',
 			description:
-				'Jump into curated stations across chill, jazz, ambient, synthwave, and more. Press play and the vibe is ready.',
+				'Jump into curated stations across lo-fi hip-hop, chillhop, ambient, lounge, synthwave, and more. Press play and the vibe is ready.',
 			icon: 'radio'
 		},
 		{
@@ -45,7 +45,7 @@
 		{
 			title: 'Upload and Export',
 			description:
-				'Supporter plans unlock custom uploads and exports, so you can process your own tracks and save them as MP3 or WAV.',
+				'Premium unlocks upload and export, so you can process your own tracks and save them as MP3 or WAV.',
 			icon: 'upload'
 		}
 	];

@@ -1,10 +1,10 @@
 {
-  "version": 2,
-  "updatedAt": "2026-03-15T12:00:00Z",
+  "version": 3,
+  "updatedAt": "2026-03-18T12:00:00Z",
   "featuredStationIds": [
     "somafm-fluid",
+    "fluxfm-chillhop",
     "somafm-dronezone",
-    "jazz24",
     "nightride-chillsynth"
   ],
   "overrides": [

@@ -51,12 +51,12 @@
 				Browser Extension for Chrome & Firefox
 			</p>
 			<h1 class="font-display text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl">
-				Turn any music into
-				<span class="text-accent">lo-fi</span>
+				Turn any tab into a
+				<span class="text-accent">lo-fi session</span>
 			</h1>
 			<p class="mx-auto mt-6 max-w-xl text-lg text-ink-secondary">
-				Real-time audio effects for your browser. Vinyl warmth, reverb, tape saturation — apply
-				lo-fi magic to radio stations or any tab audio.
+				Real-time lo-fi effects for your browser. Start with curated stations, then add warmth,
+				tape wear, dreamy rooms, and cozy presets to any tab audio.
 			</p>
 			<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 				<a
@@ -74,7 +74,7 @@
 					Add to Firefox
 				</a>
 			</div>
-			<p class="mt-4 text-sm text-ink-muted">Free forever — Premium from $2.99/mo</p>
+			<p class="mt-4 text-sm text-ink-muted">Free forever — Premium from $3.99/mo or $19/year</p>
 		</div>
 	</div>
 
@@ -93,7 +93,7 @@
 				Everything you need for the perfect lo-fi vibe
 			</h2>
 			<p class="mx-auto mt-3 max-w-2xl text-ink-tertiary">
-				From curated radio stations to professional-grade audio effects, LoveLofi has it all.
+				From curated stations to tasteful real-time audio styling, LoveLofi gives you instant atmosphere without a complicated studio workflow.
 			</p>
 		</div>
 

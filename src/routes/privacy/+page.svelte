@@ -39,6 +39,15 @@
 				server. Tab audio capture (premium feature) processes audio locally in an offscreen
 				document.
 			</p>
+
+			<h3 class="mt-4 font-medium text-ink">Anonymous Product Analytics</h3>
+			<p class="mt-1">
+				LoveLofi may collect anonymous usage events to help us understand which features are used,
+				which premium entry points convert, and where users get stuck. These events may include
+				app opens, station plays, preset selections, locked feature clicks, paywall opens, plan
+				selections, checkout starts, and premium activations. We do not send audio content,
+				browsing history, or raw tab URLs as part of analytics.
+			</p>
 		</section>
 
 		<section>
@@ -47,7 +56,6 @@
 				<li>Browsing history or URLs you visit</li>
 				<li>Audio content (we never record or transmit audio)</li>
 				<li>Personal information beyond your license key</li>
-				<li>Analytics or tracking data</li>
 				<li>Cookies on websites you visit</li>
 			</ul>
 		</section>
@@ -74,6 +82,11 @@
 				<a href="https://polar.sh/legal/privacy" class="text-accent hover:underline" target="_blank" rel="noopener">Polar.sh's Privacy Policy</a>.
 			</p>
 			<p class="mt-2">
+				<strong>PostHog</strong> — Used to process anonymous product analytics sent through the
+				LoveLofi analytics endpoint so we can improve the extension and premium flow. We do not
+				send audio content, browsing history, or raw tab URLs to PostHog.
+			</p>
+			<p class="mt-2">
 				<strong>Radio streams</strong> — When you play a radio station, your browser connects
 				directly to the stream URL (Icecast/Shoutcast). LoveLofi does not proxy these
 				connections.
@@ -84,8 +97,8 @@
 			<h2 class="text-lg font-semibold text-ink">Data Retention</h2>
 			<p class="mt-2">
 				All user data is stored in your browser's sync storage and persists until you uninstall
-				the extension or clear your browser data. We do not maintain any server-side database of
-				user data.
+				the extension or clear your browser data. Anonymous analytics events may also be stored by
+				our analytics provider for product analysis and service improvement.
 			</p>
 		</section>
 

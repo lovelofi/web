@@ -40,8 +40,8 @@
 			</div>
 			<div class="mt-4 space-y-4 text-sm text-ink-secondary">
 				<p>
-					LoveLofi includes 20+ curated radio stations streaming 24/7 lo-fi music across genres:
-					lo-fi hip-hop, chillhop, jazz, ambient, synthwave, and chill-out.
+					LoveLofi includes 30 built-in radio stations tuned toward lo-fi, chillhop, ambient,
+					lounge, synthwave, and late-night focus listening.
 				</p>
 				<p>
 					<strong>Free tier:</strong> 6 curated stations.<br />
@@ -109,12 +109,12 @@
 			<div class="mt-4 space-y-4 text-sm text-ink-secondary">
 				<p>
 					Presets are pre-configured effect combinations that instantly set a mood. LoveLofi includes
-					20+ built-in presets across categories: subtle, vinyl/analog, spacious, lo-fi radio,
-					digital degradation, room/space, muffled, and moody.
+					27 built-in presets across subtle, tape, vinyl, room, dreamy, degraded, and atmospheric
+					categories.
 				</p>
 				<p>
-					<strong>Free tier:</strong> 4 presets — Sunday Morning, Late Night Study, Rainy Cafe, Dreamy.<br />
-					<strong>Premium:</strong> All 20+ presets + save up to 20 custom presets.
+					<strong>Free tier:</strong> 4 presets — Classic Lo-Fi, Late Night Study, Rainy Cafe, Dreamy.<br />
+					<strong>Premium:</strong> All 27 presets + save up to 20 custom presets.
 				</p>
 				<p>
 					LoveLofi also suggests a preset based on the time of day: Dreamy in the morning,
@@ -198,8 +198,7 @@
 					<li>Neon Tokyo / Neon Dawn</li>
 				</ul>
 				<p>
-					<strong>Free tier:</strong> Cafe Nocturne and Cafe Eclipse (light/dark pair).<br />
-					<strong>Premium:</strong> All 16 themes.
+					All 16 themes are included for everyone. Premium does not lock themes.
 				</p>
 			</div>
 		</section>
