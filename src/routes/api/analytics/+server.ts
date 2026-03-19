@@ -1,5 +1,24 @@
 import { json } from '@sveltejs/kit';
 
+const ALLOWED_ORIGINS = new Set([
+	'tauri://localhost',
+	'https://tauri.localhost'
+]);
+
+function corsHeaders(request: Request): Record<string, string> {
+	const origin = request.headers.get('Origin') ?? '';
+	if (!ALLOWED_ORIGINS.has(origin)) return {};
+	return {
+		'Access-Control-Allow-Origin': origin,
+		'Access-Control-Allow-Methods': 'POST, OPTIONS',
+		'Access-Control-Allow-Headers': 'Content-Type'
+	};
+}
+
+export async function OPTIONS({ request }: { request: Request }) {
+	return new Response(null, { status: 204, headers: corsHeaders(request) });
+}
+
 const VALID_EVENTS = new Set([
 	'app_opened',
 	'station_played',
@@ -57,25 +76,26 @@ function isValidAnalyticsEvent(value: unknown): value is {
 }
 
 export async function POST({ request, platform, fetch }) {
+	const cors = corsHeaders(request);
 	const payload = (await request.json().catch(() => null)) as AnalyticsPayload | null;
 	const events = Array.isArray(payload?.events) ? payload.events : null;
 
 	if (!events || events.length === 0) {
-		return json({ error: 'No analytics events supplied.' }, { status: 400 });
+		return json({ error: 'No analytics events supplied.' }, { status: 400, headers: cors });
 	}
 
 	if (events.length > MAX_EVENTS_PER_REQUEST) {
-		return json({ error: 'Too many analytics events in one request.' }, { status: 413 });
+		return json({ error: 'Too many analytics events in one request.' }, { status: 413, headers: cors });
 	}
 
 	const validEvents = events.filter(isValidAnalyticsEvent);
 	if (validEvents.length !== events.length) {
-		return json({ error: 'Invalid analytics event payload.' }, { status: 400 });
+		return json({ error: 'Invalid analytics event payload.' }, { status: 400, headers: cors });
 	}
 
 	const apiKey = platform?.env?.POSTHOG_API_KEY?.trim();
 	if (!apiKey) {
-		return json({ error: 'Analytics backend is not configured yet.' }, { status: 503 });
+		return json({ error: 'Analytics backend is not configured yet.' }, { status: 503, headers: cors });
 	}
 
 	const host = (platform?.env?.POSTHOG_HOST?.trim() || DEFAULT_POSTHOG_HOST).replace(/\/$/, '');
@@ -102,9 +122,9 @@ export async function POST({ request, platform, fetch }) {
 		const errorText = await response.text().catch(() => '');
 		return json(
 			{ error: 'Analytics forwarding failed.', detail: errorText || undefined },
-			{ status: 502 }
+			{ status: 502, headers: cors }
 		);
 	}
 
-	return json({ ok: true, accepted: validEvents.length, forwarded: validEvents.length });
+	return json({ ok: true, accepted: validEvents.length, forwarded: validEvents.length }, { headers: cors });
 }
