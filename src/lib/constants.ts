@@ -10,9 +10,9 @@ export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases/l
 export const DESKTOP_DOWNLOAD_BASE = `https://github.com/${GITHUB_REPO}/releases/latest/download`;
 
 /** Polar.sh checkout URLs */
-export const POLAR_CHECKOUT_MONTHLY = 'https://polar.sh/lovelofi/subscriptions';
-export const POLAR_CHECKOUT_ANNUAL = 'https://polar.sh/lovelofi/subscriptions';
-export const POLAR_CHECKOUT_LIFETIME = 'https://polar.sh/lovelofi/subscriptions';
+export const POLAR_CHECKOUT_MONTHLY = 'https://buy.polar.sh/polar_cl_an3DN2R3ZTI0Hg4fUbxdpe9vOq1inbgjJZZod4VikOa';
+export const POLAR_CHECKOUT_ANNUAL = 'https://buy.polar.sh/polar_cl_Fti7QOPCJSiZjqrUgbXev0BrBUcoVrWw4nfwM0KWR8R';
+export const POLAR_CHECKOUT_LIFETIME = 'https://buy.polar.sh/polar_cl_o9732ZhPtn0LH6qAKFNEvHOmTgIextxRjlQCZ3OP7uL';
 
 /** Pricing */
 export const PLANS = [
