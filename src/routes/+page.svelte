@@ -49,15 +49,15 @@
 				class="mb-4 inline-flex items-center gap-2 rounded-pill border border-border bg-surface-2 px-4 py-1.5 text-sm text-ink-secondary"
 			>
 				<Radio class="h-4 w-4 text-accent" />
-				Browser Extension for Chrome & Firefox
+				Desktop App & Browser Extension
 			</p>
 			<h1 class="font-display text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl">
-				Turn any tab into a
-				<span class="text-accent">lo-fi session</span>
+				Your cozy corner for
+				<span class="text-accent">lo-fi listening</span>
 			</h1>
 			<p class="mx-auto mt-6 max-w-xl text-lg text-ink-secondary">
-				Real-time lo-fi effects for your browser. Start with curated stations, then add warmth,
-				tape wear, dreamy rooms, and cozy presets to any tab audio.
+				Curated radio stations, real-time lo-fi effects, and system audio capture.
+				Available as a desktop app for macOS, Windows, and Linux — or as a browser extension.
 			</p>
 			<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 				<a

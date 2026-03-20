@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { GITHUB_RELEASES_URL, DESKTOP_DOWNLOAD_BASE, CHROME_STORE_URL, FIREFOX_STORE_URL } from '$lib/constants';
 	import Monitor from 'lucide-svelte/icons/monitor';
-	import Apple from 'lucide-svelte/icons/apple';
 	import Download from 'lucide-svelte/icons/download';
 	import ExternalLink from 'lucide-svelte/icons/external-link';
 
@@ -26,8 +25,8 @@
 		{
 			id: 'windows' as Platform,
 			label: 'Windows',
-			description: 'Installer (.msi)',
-			file: 'LoveLofi_x64_en-US.msi',
+			description: 'Installer (.exe)',
+			file: 'LoveLofi_x64-setup.exe',
 			requirement: 'Windows 10+',
 		},
 		{
@@ -49,23 +48,60 @@
 	let detectedPlatform = $state<Platform>('unknown');
 
 	onMount(() => {
-		const ua = navigator.userAgent.toLowerCase();
+		detectedPlatform = detectPlatform();
+	});
+
+	function detectPlatform(): Platform {
+		if (typeof navigator === 'undefined') return 'unknown';
+
+		const ua = navigator.userAgent;
 		const platform = navigator.platform?.toLowerCase() ?? '';
 
-		if (platform.includes('mac') || ua.includes('macintosh')) {
-			// Check for Apple Silicon vs Intel
-			// navigator.platform is 'MacIntel' even on Apple Silicon in some browsers
-			// Use GPU renderer as a heuristic
-			const canvas = document.createElement('canvas');
-			const gl = canvas.getContext('webgl');
-			const renderer = gl?.getParameter(gl.RENDERER)?.toLowerCase() ?? '';
-			detectedPlatform = renderer.includes('apple') ? 'macos-arm' : 'macos-intel';
-		} else if (platform.includes('win') || ua.includes('windows')) {
-			detectedPlatform = 'windows';
-		} else if (platform.includes('linux') || ua.includes('linux')) {
-			detectedPlatform = 'linux';
+		// Windows
+		if (platform.includes('win') || ua.includes('Windows')) {
+			return 'windows';
 		}
-	});
+
+		// macOS — detect Apple Silicon vs Intel
+		if (platform.includes('mac') || ua.includes('Macintosh')) {
+			// Method 1: Check WebGL renderer for Apple GPU (Apple Silicon uses Apple GPU)
+			try {
+				const canvas = document.createElement('canvas');
+				const gl = canvas.getContext('webgl2') ?? canvas.getContext('webgl');
+				if (gl) {
+					const debugExt = gl.getExtension('WEBGL_debug_renderer_info');
+					if (debugExt) {
+						const renderer = gl.getParameter(debugExt.UNMASKED_RENDERER_WEBGL)?.toLowerCase() ?? '';
+						if (renderer.includes('apple m') || renderer.includes('apple gpu')) {
+							return 'macos-arm';
+						}
+						if (renderer.includes('intel') || renderer.includes('amd') || renderer.includes('radeon')) {
+							return 'macos-intel';
+						}
+					}
+				}
+			} catch {
+				// WebGL not available
+			}
+
+			// Method 2: Check userAgentData (Chromium browsers)
+			if ('userAgentData' in navigator) {
+				const uaData = (navigator as Navigator & { userAgentData?: { architecture?: string } }).userAgentData;
+				if (uaData?.architecture === 'arm') return 'macos-arm';
+				if (uaData?.architecture === 'x86') return 'macos-intel';
+			}
+
+			// Method 3: Default to Apple Silicon (most Macs sold since late 2020)
+			return 'macos-arm';
+		}
+
+		// Linux
+		if (platform.includes('linux') || ua.includes('Linux')) {
+			return 'linux';
+		}
+
+		return 'unknown';
+	}
 
 	function getDownloadUrl(file: string): string {
 		return `${DESKTOP_DOWNLOAD_BASE}/${file}`;
@@ -105,7 +141,7 @@
 				Download for {primaryDownload.label}
 			</a>
 			<p class="text-center text-sm text-ink-tertiary mt-2">
-				Requires {primaryDownload.requirement} · v0.1.0
+				Requires {primaryDownload.requirement} · v0.1.1
 			</p>
 		</div>
 
