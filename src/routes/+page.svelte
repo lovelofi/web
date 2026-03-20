@@ -19,7 +19,16 @@
 		CHROME_STORE_URL,
 		FIREFOX_STORE_URL,
 		DISCORD_URL,
+		POLAR_CHECKOUT_MONTHLY,
+		POLAR_CHECKOUT_ANNUAL,
+		POLAR_CHECKOUT_LIFETIME,
 	} from '$lib/constants';
+
+	const CHECKOUT_URLS: Record<string, string> = {
+		monthly: POLAR_CHECKOUT_MONTHLY,
+		annual: POLAR_CHECKOUT_ANNUAL,
+		lifetime: POLAR_CHECKOUT_LIFETIME,
+	};
 
 	const iconMap: Record<string, typeof Radio> = {
 		Radio,
@@ -171,14 +180,42 @@
 							</li>
 						{/each}
 					</ul>
-					<a
-						href={plan.id === 'free' ? CHROME_STORE_URL : CHROME_STORE_URL}
-						class="mt-6 block rounded-button py-2.5 text-center text-sm font-semibold transition-colors {plan.highlighted
-							? 'bg-accent text-white hover:bg-accent-hover'
-							: 'border border-border text-ink hover:bg-surface-1'}"
-					>
-						{plan.cta}
-					</a>
+					{#if plan.id === 'free'}
+						<div class="mt-6 flex flex-col gap-2">
+							<a
+								href="/download"
+								class="flex items-center justify-center gap-2 rounded-button py-2.5 text-center text-sm font-semibold border border-border text-ink hover:bg-surface-1 transition-colors"
+							>
+								<Monitor class="h-3.5 w-3.5" />
+								Desktop App
+							</a>
+							<div class="flex gap-2">
+								<a
+									href={CHROME_STORE_URL}
+									class="flex-1 flex items-center justify-center gap-1.5 rounded-button py-2 text-center text-xs font-medium border border-border text-ink-secondary hover:bg-surface-1 transition-colors"
+								>
+									<Chrome class="h-3 w-3" />
+									Chrome
+								</a>
+								<a
+									href={FIREFOX_STORE_URL}
+									class="flex-1 flex items-center justify-center gap-1.5 rounded-button py-2 text-center text-xs font-medium border border-border text-ink-secondary hover:bg-surface-1 transition-colors"
+								>
+									<Globe class="h-3 w-3" />
+									Firefox
+								</a>
+							</div>
+						</div>
+					{:else}
+						<a
+							href={CHECKOUT_URLS[plan.id] ?? POLAR_CHECKOUT_MONTHLY}
+							class="mt-6 block rounded-button py-2.5 text-center text-sm font-semibold transition-colors {plan.highlighted
+								? 'bg-accent text-white hover:bg-accent-hover'
+								: 'border border-border text-ink hover:bg-surface-1'}"
+						>
+							{plan.cta}
+						</a>
+					{/if}
 				</div>
 			{/each}
 		</div>
@@ -224,15 +261,22 @@
 	<div class="mx-auto max-w-3xl px-4 text-center sm:px-6">
 		<h2 class="font-display text-3xl font-bold text-ink sm:text-4xl">Ready to chill?</h2>
 		<p class="mt-3 text-ink-tertiary">
-			Install LoveLofi and transform your browser into a lo-fi listening station.
+			Get LoveLofi for your desktop or browser — free to start.
 		</p>
 		<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 			<a
-				href={CHROME_STORE_URL}
+				href="/download"
 				class="flex items-center gap-2 rounded-button bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-accent-hover hover:shadow-lg"
 			>
+				<Monitor class="h-4 w-4" />
+				Download Desktop App
+			</a>
+			<a
+				href={CHROME_STORE_URL}
+				class="flex items-center gap-2 rounded-button border border-border px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-surface-1"
+			>
 				<Chrome class="h-4 w-4" />
-				Add to Chrome — Free
+				Add to Chrome
 			</a>
 			<a
 				href={DISCORD_URL}

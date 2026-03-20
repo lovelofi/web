@@ -9,6 +9,11 @@ export const GITHUB_REPO = 'lovelofi/desktop';
 export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases/latest`;
 export const DESKTOP_DOWNLOAD_BASE = `https://github.com/${GITHUB_REPO}/releases/latest/download`;
 
+/** Polar.sh checkout URLs */
+export const POLAR_CHECKOUT_MONTHLY = 'https://polar.sh/lovelofi/subscriptions';
+export const POLAR_CHECKOUT_ANNUAL = 'https://polar.sh/lovelofi/subscriptions';
+export const POLAR_CHECKOUT_LIFETIME = 'https://polar.sh/lovelofi/subscriptions';
+
 /** Pricing */
 export const PLANS = [
 	{
@@ -24,7 +29,7 @@ export const PLANS = [
 			'All 16 themes',
 			'Station and preset favorites',
 		],
-		cta: 'Install Free',
+		cta: 'Get Started Free',
 		highlighted: false,
 	},
 	{
@@ -34,12 +39,12 @@ export const PLANS = [
 		period: '/month',
 		description: 'Flexible monthly access',
 		features: [
-			'Full 30-station library',
-			'27 built-in presets + custom preset saves',
+			'Full 38-station library',
+			'27 built-in presets + custom presets',
 			'All 12 audio effects',
-			'Tab audio capture for any browser tab',
-			'Upload audio and export processed tracks',
-			'Up to 10 custom radio streams',
+			'System audio capture (desktop)',
+			'Tab audio capture (extension)',
+			'Upload audio and export tracks',
 		],
 		cta: 'Go Premium',
 		highlighted: false,
