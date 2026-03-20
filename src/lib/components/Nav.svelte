@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Radio, Menu, X } from 'lucide-svelte';
-	import ThemeSwitcher from './ThemeSwitcher.svelte';
 	import { CHROME_STORE_URL } from '$lib/constants';
 
 	let mobileOpen = $state(false);
@@ -32,7 +31,7 @@
 					{link.label}
 				</a>
 			{/each}
-			<ThemeSwitcher />
+
 			<a
 				href={CHROME_STORE_URL}
 				class="rounded-button bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
@@ -43,7 +42,7 @@
 
 		<!-- Mobile menu button -->
 		<div class="flex items-center gap-3 md:hidden">
-			<ThemeSwitcher />
+
 			<button onclick={() => (mobileOpen = !mobileOpen)} class="text-ink-secondary">
 				{#if mobileOpen}
 					<X class="h-5 w-5" />
