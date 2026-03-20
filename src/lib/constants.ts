@@ -4,6 +4,11 @@ export const FIREFOX_STORE_URL = 'https://addons.mozilla.org/en-US/firefox/addon
 export const DISCORD_URL = 'https://discord.gg/pVxNeycE';
 export const SUPPORT_URL = '/support';
 
+/** Desktop app */
+export const GITHUB_REPO = 'lovelofi/desktop';
+export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases/latest`;
+export const DESKTOP_DOWNLOAD_BASE = `https://github.com/${GITHUB_REPO}/releases/latest/download`;
+
 /** Pricing */
 export const PLANS = [
 	{

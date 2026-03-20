@@ -9,6 +9,7 @@
 		ChevronDown,
 		Chrome,
 		Globe,
+		Monitor,
 	} from 'lucide-svelte';
 	import AudioDemo from '$lib/components/AudioDemo.svelte';
 	import {
@@ -60,8 +61,15 @@
 			</p>
 			<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 				<a
-					href={CHROME_STORE_URL}
+					href="/download"
 					class="flex items-center gap-2 rounded-button bg-accent px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-accent-hover hover:shadow-lg"
+				>
+					<Monitor class="h-4 w-4" />
+					Download Desktop App
+				</a>
+				<a
+					href={CHROME_STORE_URL}
+					class="flex items-center gap-2 rounded-button border border-border px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-surface-1"
 				>
 					<Chrome class="h-4 w-4" />
 					Add to Chrome
