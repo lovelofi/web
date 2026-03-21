@@ -8,9 +8,7 @@ declare global {
 		// interface PageState {}
 		interface Platform {
 			env?: {
-				UNINSTALL_EMAIL?: {
-					send(message: unknown): Promise<void>;
-				};
+				EMAIL_WORKER?: Fetcher;
 				POSTHOG_API_KEY?: string;
 				POSTHOG_HOST?: string;
 				GITHUB_TOKEN?: string;

@@ -7,6 +7,7 @@ import {
 	sendFeedbackEmail
 } from '$lib/email-server';
 
+
 const VALID_PLAN_TYPES = new Set(['free', 'monthly', 'annual', 'lifetime', 'not-sure', '']);
 
 type UninstallFeedbackPayload = {
@@ -47,7 +48,7 @@ function formatBody(payload: {
 }
 
 export async function POST({ request, platform, getClientAddress }) {
-	const binding = platform?.env?.UNINSTALL_EMAIL;
+	const binding = platform?.env?.EMAIL_WORKER;
 
 	if (!binding) {
 		return jsonError('Email backend is not configured yet.', 503);

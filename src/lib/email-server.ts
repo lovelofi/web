@@ -1,8 +1,5 @@
 import { json } from '@sveltejs/kit';
 
-export const FEEDBACK_RECIPIENT = 'lovelofiapp@gmail.com';
-export const FEEDBACK_SENDER = 'feedback@lovelofi.app';
-
 export function jsonError(message: string, status: number) {
 	return json({ ok: false, error: message }, { status });
 }
@@ -27,36 +24,20 @@ export function isValidEmail(value: string): boolean {
 	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-export function buildPlainTextEmail(subject: string, body: string, replyEmail: string): string {
-	const headers = [
-		`From: LoveLofi Feedback <${FEEDBACK_SENDER}>`,
-		`To: ${FEEDBACK_RECIPIENT}`,
-		`Subject: ${subject.replace(/[\r\n]+/g, ' ').trim()}`,
-		`Date: ${new Date().toUTCString()}`,
-		'MIME-Version: 1.0',
-		'Content-Type: text/plain; charset=UTF-8',
-		'Content-Transfer-Encoding: 8bit'
-	];
-
-	if (replyEmail) {
-		headers.push(`Reply-To: ${replyEmail}`);
-	}
-
-	return `${headers.join('\r\n')}\r\n\r\n${body.replace(/\n/g, '\r\n')}`;
-}
-
 export async function sendFeedbackEmail(
-	binding: { send(message: unknown): Promise<void> },
+	binding: { fetch(input: RequestInfo, init?: RequestInit): Promise<Response> },
 	subject: string,
 	body: string,
 	replyEmail: string
 ) {
-	const { EmailMessage } = await import('cloudflare:email');
-	const message = new EmailMessage(
-		FEEDBACK_SENDER,
-		FEEDBACK_RECIPIENT,
-		buildPlainTextEmail(subject, body, replyEmail)
-	);
+	const response = await binding.fetch('https://email-worker/send', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ subject, body, replyEmail })
+	});
 
-	await binding.send(message);
+	if (!response.ok) {
+		const err = await response.text();
+		throw new Error(`Email worker returned ${response.status}: ${err}`);
+	}
 }

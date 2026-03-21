@@ -1,0 +1,7 @@
+name = "lovelofi-email-worker"
+compatibility_date = "2026-03-16"
+main = "src/index.ts"
+
+[[send_email]]
+name = "SEND_EMAIL"
+destination_address = "lovelofiapp@gmail.com"
