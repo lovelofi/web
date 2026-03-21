@@ -99,7 +99,12 @@ export async function POST({ request, platform, getClientAddress }) {
 		feedback: feedbackWithIp
 	});
 
-	await sendFeedbackEmail(binding, subjectParts.join(' '), body, replyEmail);
+	try {
+		await sendFeedbackEmail(binding, subjectParts.join(' '), body, replyEmail);
+	} catch (err) {
+		console.error('Uninstall feedback email failed:', err);
+		return jsonError('Failed to send feedback. Please try again later.', 500);
+	}
 
 	return json({ ok: true });
 }

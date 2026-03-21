@@ -96,7 +96,12 @@ export async function POST({ request, platform, getClientAddress }) {
 		message: `${message}\n\nClient IP: ${getClientAddress()}`
 	});
 
-	await sendFeedbackEmail(binding, `LoveLofi support: ${finalSubject}`, body, email);
+	try {
+		await sendFeedbackEmail(binding, `LoveLofi support: ${finalSubject}`, body, email);
+	} catch (err) {
+		console.error('Support email failed:', err);
+		return jsonError('Failed to send message. Please try again later.', 500);
+	}
 
 	return json({ ok: true });
 }
