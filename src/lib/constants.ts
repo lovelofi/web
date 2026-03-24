@@ -110,33 +110,33 @@ export const FAQ_ITEMS = [
 /** Features for the landing page */
 export const FEATURES = [
 	{
-		title: 'Lo-Fi Radio',
-		description: '30 curated stations across lo-fi hip-hop, chillhop, ambient, lounge, synthwave, and chill-out.',
+		title: 'Lo-Fi Any Tab',
+		description: 'Turn Spotify, YouTube, or any browser tab into a lo-fi listening session. One click.',
+		icon: 'Headphones',
+	},
+	{
+		title: 'Built-In Radio',
+		description: '30 ad-free stations across lo-fi hip-hop, chillhop, ambient, synthwave, and more. Always playing.',
 		icon: 'Radio',
 	},
 	{
 		title: '12 Audio Effects',
-		description: 'Low-pass, reverb, tape saturation, vinyl crackle, bitcrusher, chorus, and more.',
+		description: 'Low-pass, reverb, tape saturation, vinyl crackle, bitcrusher, chorus — shape your own sound.',
 		icon: 'Sliders',
 	},
 	{
-		title: '27 Presets',
-		description: 'From Classic Lo-Fi to Broken Walkman, Rainy Cafe, and Dreamy — instant atmosphere with one click.',
+		title: 'Instant Presets',
+		description: 'From Sunday Morning to Haunted Ballroom — 25+ atmospheres, one click each.',
 		icon: 'Disc3',
 	},
 	{
-		title: 'Tab Audio Mode',
-		description: 'Apply lo-fi effects to any browser tab. Spotify, YouTube, anything.',
-		icon: 'Headphones',
-	},
-	{
-		title: '16 Themes',
-		description: 'Cafe Nocturne, Midnight Session, Sakura Study, Neon Tokyo, and more.',
+		title: '8 Themes',
+		description: 'Sakura Study, Forest Cabin, Lavender Haze, and more — light and dark pairs that match your mood.',
 		icon: 'Palette',
 	},
 	{
 		title: 'Keyboard Shortcuts',
-		description: 'Play, pause, skip, adjust volume — all without leaving your keyboard.',
+		description: 'Play, pause, skip, volume — without leaving your keyboard.',
 		icon: 'Keyboard',
 	},
 ] as const;

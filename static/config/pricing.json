@@ -1,10 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-03-23T00:00:00Z",
   "plans": {
     "monthly": {
-      "price": 3.99,
-      "label": "$3.99/mo",
+      "price": 1.99,
+      "label": "$1.99/mo",
       "checkoutUrl": "https://buy.polar.sh/polar_cl_an3DN2R3ZTI0Hg4fUbxdpe9vOq1inbgjJZZod4VikOa"
     },
     "annual": {
