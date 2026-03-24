@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updatedAt": "2026-03-23T00:00:00Z",
   "featuredStationIds": [
     "somafm-fluid",
@@ -70,7 +70,7 @@
       "name": "Box Lofi Radio",
       "genre": "lo-fi-hip-hop",
       "streamUrl": "https://stream.zeno.fm/tabzverz0fctv",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -78,7 +78,7 @@
       "name": "Radio Record Lo-Fi",
       "genre": "lo-fi-hip-hop",
       "streamUrl": "https://radiorecord.hostingradio.ru/lofi96.aacp",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -86,7 +86,7 @@
       "name": "Lofi Radio",
       "genre": "lo-fi-hip-hop",
       "streamUrl": "https://play.streamafrica.net/lofiradio",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -94,7 +94,7 @@
       "name": "24/7 Lofi Radio",
       "genre": "lo-fi-hip-hop",
       "streamUrl": "https://ec3.yesstreaming.net:3755/stream",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -102,7 +102,7 @@
       "name": "I Love Chillhop",
       "genre": "chillhop",
       "streamUrl": "https://play.ilovemusic.de/ilm_ilovechillhop/",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -110,7 +110,7 @@
       "name": "I Love Music & Chill",
       "genre": "chillhop",
       "streamUrl": "https://play.ilovemusic.de/ilm_ilovemusicandchill/",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -118,7 +118,7 @@
       "name": "Radio Record Chill House",
       "genre": "chillhop",
       "streamUrl": "https://radiorecord.hostingradio.ru/chillhouse96.aacp",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -126,7 +126,7 @@
       "name": "SomaFM Lush",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/lush-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/lush-128-mp3",
       "adFree": true
     },
@@ -135,7 +135,7 @@
       "name": "SomaFM Vaporwaves",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/vaporwaves-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/vaporwaves-128-mp3",
       "adFree": true
     },
@@ -144,7 +144,7 @@
       "name": "SomaFM Deep Space One",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/deepspaceone-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/deepspaceone-128-mp3",
       "adFree": true
     },
@@ -153,7 +153,7 @@
       "name": "SomaFM Space Station Soma",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/spacestation-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/spacestation-128-mp3",
       "adFree": true
     },
@@ -162,7 +162,7 @@
       "name": "SomaFM n5MD",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/n5md-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/n5md-128-mp3",
       "adFree": true
     },
@@ -171,7 +171,7 @@
       "name": "Radio Record Ambient",
       "genre": "ambient",
       "streamUrl": "https://radiorecord.hostingradio.ru/ambient96.aacp",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -179,7 +179,7 @@
       "name": "SomaFM Synphaera Radio",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/synphaera-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/synphaera-128-mp3",
       "adFree": true
     },
@@ -188,7 +188,7 @@
       "name": "Nightride FM",
       "genre": "synthwave",
       "streamUrl": "https://stream.nightride.fm/nightride.mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://stream.rekt.network/nightride.mp3",
       "adFree": true
     },
@@ -197,7 +197,7 @@
       "name": "SomaFM Groove Salad Classic",
       "genre": "ambient",
       "streamUrl": "https://ice5.somafm.com/gsclassic-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/gsclassic-128-mp3",
       "adFree": true
     },
@@ -206,7 +206,7 @@
       "name": "SomaFM Chillits Radio",
       "genre": "chill-out",
       "streamUrl": "https://ice5.somafm.com/chillits-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/chillits-128-mp3",
       "adFree": true
     },
@@ -215,7 +215,7 @@
       "name": "SomaFM Beat Blender",
       "genre": "chill-out",
       "streamUrl": "https://ice5.somafm.com/beatblender-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/beatblender-128-mp3",
       "adFree": true
     },
@@ -224,7 +224,7 @@
       "name": "Radio Record Chill-Out",
       "genre": "chill-out",
       "streamUrl": "https://radiorecord.hostingradio.ru/chil96.aacp",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -232,7 +232,7 @@
       "name": "I Love Chillout Beats",
       "genre": "chill-out",
       "streamUrl": "https://play.ilovemusic.de/ilm-ichillout_beats/",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -240,7 +240,7 @@
       "name": "Radio Record Dream Pop",
       "genre": "chill-out",
       "streamUrl": "https://radiorecord.hostingradio.ru/dreampop96.aacp",
-      "tier": "premium",
+      "tier": "free",
       "adFree": false
     },
     {
@@ -248,7 +248,7 @@
       "name": "SomaFM Bossa Beyond",
       "genre": "lounge",
       "streamUrl": "https://ice5.somafm.com/bossa-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/bossa-128-mp3",
       "adFree": true
     },
@@ -257,7 +257,7 @@
       "name": "FluxFM Electronic Chillout",
       "genre": "chill-out",
       "streamUrl": "https://channels.fluxfm.de/externalembedflxhp/electronic-chillout/stream.mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://channels.fluxfm.de/externalembedflxhp/electronic-chillout/stream.aac",
       "adFree": false
     },
@@ -266,7 +266,7 @@
       "name": "SomaFM cliqhop idm",
       "genre": "lounge",
       "streamUrl": "https://ice5.somafm.com/cliqhop-128-mp3",
-      "tier": "premium",
+      "tier": "free",
       "backupUrl": "https://ice3.somafm.com/cliqhop-128-mp3",
       "adFree": true
     }

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-03-23T00:00:00Z",
   "featuredPresetIds": [
     "classic-lofi",
@@ -13,9 +13,32 @@
   ],
   "freePresetIds": [
     "classic-lofi",
+    "lofi-hiphop",
+    "lofi-jazz",
+    "lofi-chill",
+    "lofi-synthwave",
+    "lofi-vaporwave",
+    "sunday-morning",
     "late-night-study",
     "rainy-cafe",
-    "dreamy"
+    "old-cassette",
+    "broken-walkman",
+    "dreamy",
+    "foggy-harbor",
+    "underwater",
+    "vintage-radio",
+    "vhs-memories",
+    "8-bit-chill",
+    "empty-apartment",
+    "basement-show",
+    "hotel-lobby",
+    "parking-garage",
+    "bathroom-tiles",
+    "church-hall",
+    "next-door",
+    "pillow-fort",
+    "upstairs-party",
+    "haunted-ballroom"
   ],
   "additions": [
     {
