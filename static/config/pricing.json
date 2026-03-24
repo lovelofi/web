@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-23T00:00:00Z",
+  "plans": {
+    "monthly": {
+      "price": 3.99,
+      "label": "$3.99/mo",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_an3DN2R3ZTI0Hg4fUbxdpe9vOq1inbgjJZZod4VikOa"
+    },
+    "annual": {
+      "price": 19,
+      "label": "$19/yr",
+      "badge": "Best value",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_Fti7QOPCJSiZjqrUgbXev0BrBUcoVrWw4nfwM0KWR8R"
+    },
+    "lifetime": {
+      "price": 49,
+      "label": "$49",
+      "sublabel": "supporter",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_o9732ZhPtn0LH6qAKFNEvHOmTgIextxRjlQCZ3OP7uL"
+    }
+  },
+  "customerPortalUrl": "https://polar.sh/love-lofi/portal"
+}

@@ -1,0 +1,1606 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-23T00:00:00Z",
+  "featuredPresetIds": [
+    "classic-lofi",
+    "late-night-study",
+    "rainy-cafe",
+    "dreamy",
+    "old-cassette",
+    "hotel-lobby",
+    "haunted-ballroom",
+    "vintage-radio"
+  ],
+  "freePresetIds": [
+    "classic-lofi",
+    "late-night-study",
+    "rainy-cafe",
+    "dreamy"
+  ],
+  "additions": [
+    {
+      "id": "classic-lofi",
+      "name": "Classic Lo-Fi",
+      "description": "The everyday signature: rounded highs, soft studio air, and just enough tape dust to feel familiar.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 34
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 18,
+          "profile": "studio"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 4
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "lofi-hiphop",
+      "name": "Lo-Fi Hip-Hop",
+      "description": "Dusty drums and mellow samples — warmer lows, more crackle, tighter room",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 44
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 16,
+          "profile": "room"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 28
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "lofi-jazz",
+      "name": "Lo-Fi Jazz",
+      "description": "Softer edges for live instruments — airy warmth, low dust, and a natural room",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 24,
+          "profile": "studio"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "lofi-chill",
+      "name": "Lo-Fi Chill",
+      "description": "Gentle and unobtrusive — a clean cozy treatment for background listening",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 28
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 16,
+          "profile": "studio"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "lofi-synthwave",
+      "name": "Lo-Fi Synthwave",
+      "description": "Retro neon haze — less muffled, wider chorus, and glossy tape wear",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 22,
+          "profile": "spring"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "lofi-vaporwave",
+      "name": "Lo-Fi Vaporwave",
+      "description": "Drowsy and degraded — slowed, smeared, and drifting through pink fog",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 40
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 42,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "dropout": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "sunday-morning",
+      "name": "Sunday Morning",
+      "description": "Barely-there warmth — just enough to soften the edges",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 16,
+          "profile": "studio"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "late-night-study",
+      "name": "Late Night Study",
+      "description": "Focused and intimate, with soft room tone, restrained texture, and enough motion to stay alive.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 34
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 28,
+          "profile": "room"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 3
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "rainy-cafe",
+      "name": "Rainy Cafe",
+      "description": "Muffled cafe speakers, softened detail, and a little record dust, like music drifting in from the next room.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 40
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 18,
+          "profile": "cassette"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 4
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "old-cassette",
+      "name": "Old Cassette",
+      "description": "A worn but listenable cassette pass with softened highs, audible wow, and a touch of mechanical instability.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "reverb": {
+          "enabled": false,
+          "intensity": 0,
+          "profile": "cassette"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "dropout": {
+          "enabled": true,
+          "intensity": 4
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "broken-walkman",
+      "name": "Broken Walkman",
+      "description": "Dying batteries, chewed tape — beautifully broken",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 35
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 40
+        },
+        "reverb": {
+          "enabled": false,
+          "intensity": 0,
+          "profile": "cassette"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 32
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "dropout": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 34
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "dreamy",
+      "name": "Dreamy",
+      "description": "A wide, floating wash with soft shimmer and gentle drag for sleepy, late-night listening.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 50,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "foggy-harbor",
+      "name": "Foggy Harbor",
+      "description": "Distant, muffled, drifting through dense fog",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 52
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 64,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 5
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "underwater",
+      "name": "Underwater",
+      "description": "Submerged — everything is filtered, slow, and distant",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 65
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 55
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 35
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 25
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 35
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "vintage-radio",
+      "name": "Vintage Radio",
+      "description": "Narrow-band radio tone with papery mids, old-speaker warmth, and a little station grit.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 58
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 36
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "reverb": {
+          "enabled": false,
+          "intensity": 0,
+          "profile": "spring"
+        },
+        "bitcrusher": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 4
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "vhs-memories",
+      "name": "VHS Memories",
+      "description": "Worn video tape — soft bitcrush, tracking drift, tape hiss",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 38
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 15
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 28
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 10,
+          "profile": "cassette"
+        },
+        "bitcrusher": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "dropout": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "8-bit-chill",
+      "name": "8-Bit Chill",
+      "description": "Retro digital — crunchy bitcrusher meets warm reverb",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 26,
+          "profile": "studio"
+        },
+        "bitcrusher": {
+          "enabled": true,
+          "intensity": 42
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "empty-apartment",
+      "name": "Empty Apartment",
+      "description": "Bare walls, wood floors — small room with bright early reflections",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "basement-show",
+      "name": "Basement Show",
+      "description": "Low ceiling, concrete walls — tight reverb, saturated PA system",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 35
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 25
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "hotel-lobby",
+      "name": "Hotel Lobby",
+      "description": "A polished lobby bloom with airy reflections, elegant width, and a warm upscale haze.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 38,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "parking-garage",
+      "name": "Parking Garage",
+      "description": "Concrete cathedral — metallic echoes, dark and cavernous",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 58,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "bathroom-tiles",
+      "name": "Bathroom Tiles",
+      "description": "Singing in the shower — bright, tight reverb with flutter echoes",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 15
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "tapeSaturation": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 34,
+          "profile": "spring"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "church-hall",
+      "name": "Church Hall",
+      "description": "Vast stone nave — long decay, warm organ-like resonance",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 40
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 6
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 72,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 4
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "next-door",
+      "name": "Next Door",
+      "description": "Music bleeding through the wall — muffled, warm, just out of reach",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 70
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 22
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "pillow-fort",
+      "name": "Pillow Fort",
+      "description": "Buried under blankets — ultra-muffled, cozy, low-end only",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 78
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 15
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 8
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 5
+        },
+        "stereoDrift": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "upstairs-party",
+      "name": "Upstairs Party",
+      "description": "Bass and mids thumping through the ceiling — distant beat, no detail",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 82
+        },
+        "highPass": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 28
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vinylCrackle": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "pitchWobble": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 12
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    },
+    {
+      "id": "haunted-ballroom",
+      "name": "Haunted Ballroom",
+      "description": "A dark ballroom bloom with warped motion, dusty ghosts in the air, and long trailing echoes.",
+      "settings": {
+        "lowPass": {
+          "enabled": true,
+          "intensity": 44
+        },
+        "highPass": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "tapeSaturation": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "reverb": {
+          "enabled": true,
+          "intensity": 60,
+          "profile": "hall"
+        },
+        "bitcrusher": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "chorus": {
+          "enabled": true,
+          "intensity": 24
+        },
+        "vinylCrackle": {
+          "enabled": true,
+          "intensity": 20
+        },
+        "pitchWobble": {
+          "enabled": true,
+          "intensity": 14
+        },
+        "stereoDrift": {
+          "enabled": true,
+          "intensity": 16
+        },
+        "dropout": {
+          "enabled": false,
+          "intensity": 0
+        },
+        "slowdown": {
+          "enabled": true,
+          "intensity": 18
+        },
+        "vocalCut": {
+          "enabled": false,
+          "intensity": 0
+        }
+      }
+    }
+  ],
+  "overrides": [],
+  "sections": [
+    {
+      "id": "featured",
+      "title": "Featured",
+      "presetIds": [
+        "classic-lofi",
+        "late-night-study",
+        "rainy-cafe",
+        "dreamy",
+        "old-cassette",
+        "hotel-lobby",
+        "haunted-ballroom",
+        "vintage-radio"
+      ]
+    },
+    {
+      "id": "lofi-family",
+      "title": "Lo-Fi Family",
+      "presetIds": [
+        "lofi-hiphop",
+        "lofi-jazz",
+        "lofi-chill",
+        "lofi-synthwave",
+        "lofi-vaporwave"
+      ]
+    },
+    {
+      "id": "subtle-cozy",
+      "title": "Subtle & Cozy",
+      "presetIds": [
+        "sunday-morning",
+        "next-door",
+        "pillow-fort"
+      ]
+    },
+    {
+      "id": "tape-retro",
+      "title": "Tape & Retro",
+      "presetIds": [
+        "broken-walkman",
+        "vhs-memories"
+      ]
+    },
+    {
+      "id": "dreamy-washed",
+      "title": "Dreamy & Washed",
+      "presetIds": [
+        "foggy-harbor"
+      ]
+    },
+    {
+      "id": "spaces",
+      "title": "Spaces",
+      "presetIds": [
+        "empty-apartment",
+        "basement-show",
+        "parking-garage",
+        "bathroom-tiles",
+        "church-hall",
+        "upstairs-party"
+      ]
+    },
+    {
+      "id": "experimental",
+      "title": "Experimental",
+      "presetIds": [
+        "underwater",
+        "8-bit-chill"
+      ]
+    }
+  ],
+  "timeSuggestions": {
+    "morning": "dreamy",
+    "afternoon": "rainy-cafe",
+    "evening": "late-night-study",
+    "late-night": "old-cassette"
+  }
+}
