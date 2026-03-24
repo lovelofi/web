@@ -64,9 +64,7 @@
 		<section>
 			<h2 class="text-lg font-semibold text-ink">7. Product Analytics</h2>
 			<p class="mt-2">
-				We may collect anonymous product usage analytics to understand feature usage, improve the
-				Service, and evaluate the premium experience. These analytics are described in more detail
-				in our Privacy Policy.
+				LoveLofi does not collect any usage analytics or track user activity.
 			</p>
 		</section>
 
