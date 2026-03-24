@@ -85,6 +85,7 @@
 
 <svelte:head>
 	<title>Sorry to see you go — LoveLofi</title>
+	<meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 <section class="relative overflow-hidden py-16 sm:py-24">

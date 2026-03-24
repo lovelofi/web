@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Privacy Policy — LoveLofi</title>
+	<meta name="description" content="LoveLofi privacy policy. All audio is processed locally on your device. Learn what data we collect, how we use it, and your rights." />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6">

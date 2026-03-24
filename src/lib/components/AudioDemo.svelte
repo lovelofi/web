@@ -123,6 +123,7 @@
 						value={demo.volume}
 						oninput={(e) => demo.setVolume(Number(e.currentTarget.value))}
 						class="slider-track w-20"
+						aria-label="Volume"
 					/>
 				</div>
 			</div>

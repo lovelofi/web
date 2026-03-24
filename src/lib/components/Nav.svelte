@@ -34,7 +34,7 @@
 
 			<a
 				href={CHROME_STORE_URL}
-				class="rounded-button bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+				class="btn-lift rounded-button bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-hover"
 			>
 				Install Extension
 			</a>
@@ -43,7 +43,12 @@
 		<!-- Mobile menu button -->
 		<div class="flex items-center gap-3 md:hidden">
 
-			<button onclick={() => (mobileOpen = !mobileOpen)} class="text-ink-secondary">
+			<button
+			onclick={() => (mobileOpen = !mobileOpen)}
+			class="text-ink-secondary"
+			aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+			aria-expanded={mobileOpen}
+		>
 				{#if mobileOpen}
 					<X class="h-5 w-5" />
 				{:else}
@@ -54,23 +59,25 @@
 	</div>
 
 	<!-- Mobile menu -->
-	{#if mobileOpen}
-		<div class="border-t border-border-soft bg-surface-0 px-4 pb-4 pt-2 md:hidden">
-			{#each links as link}
+	<div class="mobile-menu md:hidden {mobileOpen ? 'open' : ''}">
+		<div>
+			<div class="border-t border-border-soft bg-surface-0 px-4 pb-4 pt-2">
+				{#each links as link}
+					<a
+						href={link.href}
+						class="block py-2 text-sm font-medium text-ink-secondary transition-colors hover:text-accent"
+						onclick={() => (mobileOpen = false)}
+					>
+						{link.label}
+					</a>
+				{/each}
 				<a
-					href={link.href}
-					class="block py-2 text-sm font-medium text-ink-secondary transition-colors hover:text-accent"
-					onclick={() => (mobileOpen = false)}
+					href={CHROME_STORE_URL}
+					class="mt-2 block rounded-button bg-accent px-4 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
 				>
-					{link.label}
+					Install Extension
 				</a>
-			{/each}
-			<a
-				href={CHROME_STORE_URL}
-				class="mt-2 block rounded-button bg-accent px-4 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
-			>
-				Install Extension
-			</a>
+			</div>
 		</div>
-	{/if}
+	</div>
 </nav>

@@ -68,6 +68,7 @@
 
 <svelte:head>
 	<title>Support — LoveLofi</title>
+	<meta name="description" content="Get help with LoveLofi — billing, bug reports, feature requests, setup, and general questions. We typically reply within 24 hours." />
 </svelte:head>
 
 <section class="relative overflow-hidden py-16 sm:py-24">

@@ -97,6 +97,7 @@
 
 <svelte:head>
 	<title>Changelog — LoveLofi</title>
+	<meta name="description" content="What's new in LoveLofi. Release notes for the desktop app and browser extension — new features, improvements, and bug fixes." />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
@@ -116,6 +117,7 @@
 					? 'bg-accent text-white'
 					: 'bg-surface-1 text-ink-secondary hover:text-ink hover:bg-surface-2'}"
 				onclick={() => setFilter(tab.id as Platform)}
+				aria-pressed={filter === tab.id}
 			>
 				{tab.label}
 			</button>

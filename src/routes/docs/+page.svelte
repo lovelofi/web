@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Documentation — LoveLofi</title>
+	<meta name="description" content="Learn how to use LoveLofi — radio stations, audio effects, presets, tab audio capture, keyboard shortcuts, themes, and license management." />
 </svelte:head>
 
 <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6">

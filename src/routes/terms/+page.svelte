@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Terms of Service — LoveLofi</title>
+	<meta name="description" content="Terms of service for LoveLofi — covering free and premium tiers, payments, license keys, audio content, and limitation of liability." />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6">

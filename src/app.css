@@ -172,4 +172,111 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
   }
+
+  /* ---- Motion tokens ---- */
+  :root {
+    --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    --duration-entrance: 700ms;
+  }
+
+  /* ---- Fade-up entrance (used by InView) ---- */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity var(--duration-entrance) var(--ease-out),
+      transform var(--duration-entrance) var(--ease-out);
+  }
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ---- Stagger children ---- */
+  .stagger > .fade-up:nth-child(1) { transition-delay: 0ms; }
+  .stagger > .fade-up:nth-child(2) { transition-delay: 100ms; }
+  .stagger > .fade-up:nth-child(3) { transition-delay: 200ms; }
+  .stagger > .fade-up:nth-child(4) { transition-delay: 300ms; }
+  .stagger > .fade-up:nth-child(5) { transition-delay: 400ms; }
+  .stagger > .fade-up:nth-child(6) { transition-delay: 500ms; }
+
+  /* ---- Hero stagger (tighter, for page load) ---- */
+  .hero-stagger > *:nth-child(1) { transition-delay: 0ms; }
+  .hero-stagger > *:nth-child(2) { transition-delay: 120ms; }
+  .hero-stagger > *:nth-child(3) { transition-delay: 240ms; }
+  .hero-stagger > *:nth-child(4) { transition-delay: 360ms; }
+  .hero-stagger > *:nth-child(5) { transition-delay: 480ms; }
+
+  /* ---- FAQ accordion ---- */
+  .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--duration-normal) var(--ease-out);
+  }
+  .faq-answer.open {
+    grid-template-rows: 1fr;
+  }
+  .faq-answer > div {
+    overflow: hidden;
+  }
+
+  /* ---- Mobile nav slide ---- */
+  .mobile-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--duration-normal) var(--ease-out);
+  }
+  .mobile-menu.open {
+    grid-template-rows: 1fr;
+  }
+  .mobile-menu > div {
+    overflow: hidden;
+  }
+
+  /* ---- CTA button lift ---- */
+  .btn-lift {
+    transition:
+      transform var(--duration-fast) var(--ease-out),
+      box-shadow var(--duration-fast) var(--ease-out),
+      background-color var(--duration-fast) var(--ease-out);
+  }
+  .btn-lift:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+  .btn-lift:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* ---- Feature card hover ---- */
+  .card-hover {
+    transition:
+      transform var(--duration-normal) var(--ease-out),
+      box-shadow var(--duration-normal) var(--ease-out);
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ============================================
+   Reduced motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fade-up {
+    opacity: 1;
+    transform: none;
+  }
 }

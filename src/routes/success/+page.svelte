@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Welcome to Premium — LoveLofi</title>
+	<meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 <div class="flex min-h-[70vh] items-center justify-center px-4">
