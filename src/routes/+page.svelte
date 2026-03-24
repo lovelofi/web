@@ -92,7 +92,7 @@
 			},
 			{
 				"@type": "Offer",
-				"price": "3.99",
+				"price": "1.99",
 				"priceCurrency": "USD",
 				"description": "Premium monthly — all effects, stations, and features",
 				"priceValidUntil": "2027-12-31"
@@ -177,7 +177,7 @@
 				class="fade-up mt-4 text-sm text-ink-muted"
 				class:in-view={heroVisible}
 			>
-				Free forever — Premium from $3.99/mo or $19/year
+				Free forever — Premium from $1.99/mo or $19/year
 			</p>
 		</div>
 	</div>
