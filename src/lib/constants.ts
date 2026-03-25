@@ -7,7 +7,6 @@ export const SUPPORT_URL = '/support';
 /** Desktop app */
 export const GITHUB_REPO = 'lovelofi/desktop';
 export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases/latest`;
-export const DESKTOP_DOWNLOAD_BASE = `https://github.com/${GITHUB_REPO}/releases/latest/download`;
 
 /** Polar.sh checkout URLs */
 export const POLAR_CHECKOUT_MONTHLY = 'https://buy.polar.sh/polar_cl_an3DN2R3ZTI0Hg4fUbxdpe9vOq1inbgjJZZod4VikOa';

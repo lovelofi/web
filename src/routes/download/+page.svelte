@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { GITHUB_RELEASES_URL, DESKTOP_DOWNLOAD_BASE, CHROME_STORE_URL, FIREFOX_STORE_URL } from '$lib/constants';
+	import { GITHUB_RELEASES_URL, CHROME_STORE_URL, FIREFOX_STORE_URL } from '$lib/constants';
 	import Monitor from 'lucide-svelte/icons/monitor';
 	import Download from 'lucide-svelte/icons/download';
 	import ExternalLink from 'lucide-svelte/icons/external-link';
+
+	let { data } = $props();
 
 	type Platform = 'macos-arm' | 'macos-intel' | 'windows' | 'linux' | 'unknown';
 
@@ -12,35 +14,35 @@
 			id: 'macos-arm' as Platform,
 			label: 'macOS (Apple Silicon)',
 			description: 'For M1, M2, M3, M4 Macs',
-			file: 'LoveLofi_aarch64.dmg',
+			suffix: '_aarch64.dmg',
 			requirement: 'macOS 14.2+',
 		},
 		{
 			id: 'macos-intel' as Platform,
 			label: 'macOS (Intel)',
 			description: 'For older Intel-based Macs',
-			file: 'LoveLofi_x64.dmg',
+			suffix: '_x64.dmg',
 			requirement: 'macOS 14.2+',
 		},
 		{
 			id: 'windows' as Platform,
 			label: 'Windows',
 			description: 'Installer (.exe)',
-			file: 'LoveLofi_x64-setup.exe',
+			suffix: '_x64-setup.exe',
 			requirement: 'Windows 10+',
 		},
 		{
 			id: 'linux' as Platform,
 			label: 'Linux (AppImage)',
 			description: 'Universal Linux package',
-			file: 'LoveLofi_amd64.AppImage',
+			suffix: '_amd64.AppImage',
 			requirement: 'Ubuntu 22.04+',
 		},
 		{
 			id: 'linux' as Platform,
 			label: 'Linux (Debian)',
 			description: '.deb package',
-			file: 'LoveLofi_amd64.deb',
+			suffix: '_amd64.deb',
 			requirement: 'Debian/Ubuntu',
 		},
 	];
@@ -103,8 +105,8 @@
 		return 'unknown';
 	}
 
-	function getDownloadUrl(file: string): string {
-		return `${DESKTOP_DOWNLOAD_BASE}/${file}`;
+	function getDownloadUrl(suffix: string): string {
+		return data.assets[suffix] ?? GITHUB_RELEASES_URL;
 	}
 
 	let primaryDownload = $derived(
@@ -133,7 +135,7 @@
 		<!-- Primary download -->
 		<div class="mb-8">
 			<a
-				href={getDownloadUrl(primaryDownload.file)}
+				href={getDownloadUrl(primaryDownload.suffix)}
 				class="flex items-center justify-center gap-3 w-full px-6 py-4 rounded-xl bg-accent text-white font-semibold text-lg
 					hover:bg-accent/90 transition-colors shadow-lg"
 			>
@@ -141,7 +143,7 @@
 				Download for {primaryDownload.label}
 			</a>
 			<p class="text-center text-sm text-ink-tertiary mt-2">
-				Requires {primaryDownload.requirement} · v0.1.1
+				Requires {primaryDownload.requirement} · {data.version ?? 'latest'}
 			</p>
 		</div>
 
@@ -151,7 +153,7 @@
 			<div class="grid gap-2">
 				{#each downloads as download}
 					<a
-						href={getDownloadUrl(download.file)}
+						href={getDownloadUrl(download.suffix)}
 						class="flex items-center justify-between gap-4 px-4 py-3 rounded-lg border border-border-soft bg-surface-1
 							hover:border-border hover:bg-surface-2 transition-colors"
 					>
