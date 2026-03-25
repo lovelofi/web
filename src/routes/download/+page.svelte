@@ -167,6 +167,41 @@
 			</div>
 		</div>
 
+		<!-- Troubleshooting -->
+		<div class="mb-12">
+			<h2 class="text-sm font-semibold text-ink-tertiary uppercase tracking-wider mb-3">Having trouble?</h2>
+			<div class="space-y-2">
+				<details class="group rounded-lg border border-border-soft bg-surface-1">
+					<summary class="flex cursor-pointer items-center justify-between px-4 py-3 text-sm font-medium text-ink hover:bg-surface-2 transition-colors">
+						macOS says the app is "damaged" or "can't be opened"
+					</summary>
+					<div class="border-t border-border-soft px-4 py-3 text-sm text-ink-tertiary">
+						<p>macOS Gatekeeper quarantines apps downloaded outside the App Store. To fix this, open Terminal and run:</p>
+						<code class="mt-2 block rounded-sm bg-surface-inset px-3 py-2 text-xs text-ink-secondary">xattr -cr /Applications/LoveLofi.app</code>
+						<p class="mt-2">Then relaunch the app.</p>
+					</div>
+				</details>
+				<details class="group rounded-lg border border-border-soft bg-surface-1">
+					<summary class="flex cursor-pointer items-center justify-between px-4 py-3 text-sm font-medium text-ink hover:bg-surface-2 transition-colors">
+						Windows SmartScreen blocks the installer
+					</summary>
+					<div class="border-t border-border-soft px-4 py-3 text-sm text-ink-tertiary">
+						<p>Windows SmartScreen may show "Windows protected your PC" for unsigned installers. Click <strong class="text-ink-secondary">More info</strong>, then <strong class="text-ink-secondary">Run anyway</strong> to proceed.</p>
+					</div>
+				</details>
+				<details class="group rounded-lg border border-border-soft bg-surface-1">
+					<summary class="flex cursor-pointer items-center justify-between px-4 py-3 text-sm font-medium text-ink hover:bg-surface-2 transition-colors">
+						Linux AppImage won't launch
+					</summary>
+					<div class="border-t border-border-soft px-4 py-3 text-sm text-ink-tertiary">
+						<p>AppImages need execute permission. Open a terminal and run:</p>
+						<code class="mt-2 block rounded-sm bg-surface-inset px-3 py-2 text-xs text-ink-secondary">chmod +x LoveLofi_*.AppImage</code>
+						<p class="mt-2">Then double-click or run <code class="text-ink-secondary">./LoveLofi_*.AppImage</code> to launch.</p>
+					</div>
+				</details>
+			</div>
+		</div>
+
 		<!-- What's included -->
 		<div class="mb-12">
 			<h2 class="text-sm font-semibold text-ink-tertiary uppercase tracking-wider mb-3">Desktop features</h2>
