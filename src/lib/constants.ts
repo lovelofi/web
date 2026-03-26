@@ -1,5 +1,5 @@
 /** Store links — update these when published */
-export const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/lovelofi';
+export const CHROME_STORE_URL = 'https://chrome.google.com/webstore/detail/mendcekkmnbilibckdlilbpikmdjllic';
 export const FIREFOX_STORE_URL = 'https://addons.mozilla.org/en-US/firefox/addon/lovelofi';
 export const DISCORD_URL = 'https://discord.gg/pVxNeycE';
 export const SUPPORT_URL = '/support';
