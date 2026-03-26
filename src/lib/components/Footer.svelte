@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Radio, Heart } from 'lucide-svelte';
-	import { CHROME_STORE_URL, FIREFOX_STORE_URL, DISCORD_URL, SUPPORT_URL } from '$lib/constants';
+	import { CHROME_STORE_URL, DISCORD_URL, SUPPORT_URL } from '$lib/constants';
 </script>
 
 <footer class="border-t border-border bg-surface-1">
@@ -40,9 +40,6 @@
 					</li>
 					<li>
 						<a href={CHROME_STORE_URL} target="_blank" rel="noopener" class="hover:text-accent">Chrome Web Store</a>
-					</li>
-					<li>
-						<a href={FIREFOX_STORE_URL} target="_blank" rel="noopener" class="hover:text-accent">Firefox Add-ons</a>
 					</li>
 				</ul>
 			</div>

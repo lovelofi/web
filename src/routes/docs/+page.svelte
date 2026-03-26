@@ -20,8 +20,7 @@
 			</div>
 			<div class="mt-4 space-y-4 text-sm text-ink-secondary">
 				<p>
-					Install LoveLofi from the <a href="https://chromewebstore.google.com" class="text-accent hover:underline">Chrome Web Store</a> or
-					<a href="https://addons.mozilla.org" class="text-accent hover:underline">Firefox Add-ons</a>.
+					Install LoveLofi from the <a href="https://chromewebstore.google.com" class="text-accent hover:underline">Chrome Web Store</a>.
 					After installing, click the extension icon in your toolbar to open the popup player.
 				</p>
 				<ol class="list-decimal space-y-2 pl-6">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { GITHUB_RELEASES_URL, CHROME_STORE_URL, FIREFOX_STORE_URL } from '$lib/constants';
+	import { GITHUB_RELEASES_URL, CHROME_STORE_URL } from '$lib/constants';
 	import Monitor from 'lucide-svelte/icons/monitor';
 	import Download from 'lucide-svelte/icons/download';
 	import ExternalLink from 'lucide-svelte/icons/external-link';
@@ -232,14 +232,6 @@
 						text-sm text-ink-secondary hover:text-ink hover:bg-surface-2 transition-colors"
 				>
 					Chrome
-					<ExternalLink size={12} />
-				</a>
-				<a
-					href={FIREFOX_STORE_URL}
-					class="flex items-center gap-1.5 px-4 py-2 rounded-lg border border-border-soft bg-surface-1
-						text-sm text-ink-secondary hover:text-ink hover:bg-surface-2 transition-colors"
-				>
-					Firefox
 					<ExternalLink size={12} />
 				</a>
 			</div>

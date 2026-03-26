@@ -8,7 +8,6 @@
 		Keyboard,
 		ChevronDown,
 		Chrome,
-		Globe,
 		Monitor,
 	} from 'lucide-svelte';
 	import { onMount } from 'svelte';
@@ -19,7 +18,6 @@
 		PLANS,
 		FAQ_ITEMS,
 		CHROME_STORE_URL,
-		FIREFOX_STORE_URL,
 		DISCORD_URL,
 		POLAR_CHECKOUT_MONTHLY,
 		POLAR_CHECKOUT_ANNUAL,
@@ -80,7 +78,7 @@
 		"@type": "SoftwareApplication",
 		"name": "LoveLofi",
 		"applicationCategory": "MultimediaApplication",
-		"operatingSystem": "Chrome, Firefox, macOS, Windows, Linux",
+		"operatingSystem": "Chrome, macOS, Windows, Linux",
 		"url": "https://lovelofi.app",
 		"description": "Real-time lo-fi audio effects for your browser and desktop. Curated radio stations, vinyl warmth, reverb, tape saturation, and more.",
 		"offers": [
@@ -164,13 +162,6 @@
 				>
 					<Chrome class="h-4 w-4" />
 					Add to Chrome
-				</a>
-				<a
-					href={FIREFOX_STORE_URL}
-					class="btn-lift flex items-center gap-2 rounded-button border border-border px-6 py-3 text-sm font-semibold text-ink hover:bg-surface-1"
-				>
-					<Globe class="h-4 w-4" />
-					Add to Firefox
 				</a>
 			</div>
 			<p
@@ -274,7 +265,6 @@
 								<Monitor class="h-3.5 w-3.5" />
 								Desktop App
 							</a>
-							<div class="flex gap-2">
 								<a
 									href={CHROME_STORE_URL}
 									class="flex-1 flex items-center justify-center gap-1.5 rounded-button py-2 text-center text-xs font-medium border border-border text-ink-secondary hover:bg-surface-1 transition-colors"
@@ -282,14 +272,6 @@
 									<Chrome class="h-3 w-3" />
 									Chrome
 								</a>
-								<a
-									href={FIREFOX_STORE_URL}
-									class="flex-1 flex items-center justify-center gap-1.5 rounded-button py-2 text-center text-xs font-medium border border-border text-ink-secondary hover:bg-surface-1 transition-colors"
-								>
-									<Globe class="h-3 w-3" />
-									Firefox
-								</a>
-							</div>
 						</div>
 					{:else}
 						<a

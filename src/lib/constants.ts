@@ -1,12 +1,13 @@
 /** Store links — update these when published */
 export const CHROME_STORE_URL = 'https://chrome.google.com/webstore/detail/mendcekkmnbilibckdlilbpikmdjllic';
-export const FIREFOX_STORE_URL = 'https://addons.mozilla.org/en-US/firefox/addon/lovelofi';
 export const DISCORD_URL = 'https://discord.gg/pVxNeycE';
 export const SUPPORT_URL = '/support';
 
-/** Desktop app */
-export const GITHUB_REPO = 'lovelofi/desktop';
-export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_REPO}/releases/latest`;
+/** GitHub repos */
+export const GITHUB_DESKTOP_REPO = 'lovelofi/desktop';
+export const GITHUB_EXT_REPO = 'lovelofi/ext';
+export const GITHUB_REPO = GITHUB_DESKTOP_REPO;
+export const GITHUB_RELEASES_URL = `https://github.com/${GITHUB_DESKTOP_REPO}/releases/latest`;
 
 /** Polar.sh checkout URLs */
 export const POLAR_CHECKOUT_MONTHLY = 'https://buy.polar.sh/polar_cl_an3DN2R3ZTI0Hg4fUbxdpe9vOq1inbgjJZZod4VikOa';
@@ -75,7 +76,7 @@ export const FAQ_ITEMS = [
 	},
 	{
 		q: 'Which browsers are supported?',
-		a: 'LoveLofi works on Chrome and Firefox. It uses Manifest V3 (MV3) for Chrome and the equivalent for Firefox.',
+		a: 'LoveLofi works on Chrome and Chromium-based browsers (Edge, Brave, Arc, etc.) using Manifest V3.',
 	},
 	{
 		q: 'What effects are included for free?',

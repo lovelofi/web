@@ -1,77 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import type { ChangelogEntry } from './+page.server';
+	import ExternalLink from 'lucide-svelte/icons/external-link';
 
 	type Platform = 'all' | 'extension' | 'desktop';
 
-	interface ChangelogEntry {
-		version: string;
-		date: string;
-		platform: 'extension' | 'desktop';
-		latest?: boolean;
-		sections: {
-			title: string;
-			items: string[];
-		}[];
-	}
-
-	const entries: ChangelogEntry[] = [
-		{
-			version: 'v0.1.1',
-			date: 'March 2026',
-			platform: 'desktop',
-			latest: true,
-			sections: [
-				{
-					title: 'Initial Release',
-					items: [
-						'System audio capture via CoreAudio ProcessTap (macOS 14.2+)',
-						'Per-app audio capture targets',
-						'Now playing metadata and media controls via MediaRemote',
-						'Lo-fi radio player with 38 curated stations',
-						'12 real-time audio effects with Web Audio API',
-						'27 built-in presets',
-						'System tray app with detachable floating window',
-						'Global keyboard shortcuts (system-wide)',
-						'Rich tray menu with stations, presets, and playback controls',
-						'16 themes in 8 light/dark pairs',
-						'Sleep timer with fade-out',
-						'Audio file upload and export (MP3/WAV)',
-						'Auto-update support',
-						'Launch at login',
-						'macOS, Windows, and Linux support',
-					],
-				},
-			],
-		},
-		{
-			version: 'v1.0.0',
-			date: 'March 2026',
-			platform: 'extension',
-			latest: true,
-			sections: [
-				{
-					title: 'Initial Release',
-					items: [
-						'Lo-fi radio player with 38 curated stations across 7 categories',
-						'12 real-time audio effects with Web Audio API',
-						'27 built-in presets',
-						'Tab audio capture — apply effects to any browser tab',
-						'16 themes in 8 light/dark pairs',
-						'Custom presets and custom stations (premium)',
-						'Keyboard shortcuts for playback control',
-						'Sleep timer',
-						'Mini player via content script',
-						'Chrome and Firefox support (Manifest V3)',
-					],
-				},
-			],
-		},
-	];
+	let { data } = $props();
+	const entries: ChangelogEntry[] = data.entries;
 
 	let filter = $state<Platform>('all');
 
-	// Read initial filter from URL query param
 	$effect(() => {
 		const param = $page.url.searchParams.get('platform');
 		if (param === 'extension' || param === 'desktop') {
@@ -93,6 +32,29 @@
 	let filteredEntries = $derived(
 		filter === 'all' ? entries : entries.filter((e) => e.platform === filter),
 	);
+
+	/** Convert release-please markdown body into simple HTML */
+	function renderBody(body: string): string {
+		return body
+			// Headers: ### Foo → <h4>Foo</h4>
+			.replace(/^###\s+(.+)$/gm, '<h4 class="font-medium text-ink mt-3">$1</h4>')
+			.replace(/^##\s+.+$/gm, '') // strip ## version headers (redundant)
+			// List items: * foo or - foo → <li>foo</li>
+			.replace(/^\*\s+(.+)$/gm, '<li>$1</li>')
+			.replace(/^-\s+(.+)$/gm, '<li>$1</li>')
+			// Wrap consecutive <li> runs in <ul>
+			.replace(/((?:<li>.*<\/li>\n?)+)/g, '<ul class="mt-1 list-disc space-y-1 pl-5">$1</ul>')
+			// Links: [text](url) → <a>text</a>
+			.replace(
+				/\[([^\]]+)\]\(([^)]+)\)/g,
+				'<a href="$2" class="text-accent hover:underline">$1</a>',
+			)
+			// Bold: **text** → <strong>text</strong>
+			.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+			// Clean up empty lines
+			.replace(/\n{3,}/g, '\n\n')
+			.trim();
+	}
 </script>
 
 <svelte:head>
@@ -140,29 +102,27 @@
 					{/if}
 				</div>
 				<p class="mt-1 text-sm text-ink-muted">{entry.date}</p>
-				<div class="mt-3 space-y-3 text-sm text-ink-secondary">
-					{#each entry.sections as section}
-						<div>
-							<h3 class="font-medium text-ink">{section.title}</h3>
-							<ul class="mt-1 list-disc space-y-1 pl-5">
-								{#each section.items as item}
-									<li>{item}</li>
-								{/each}
-							</ul>
-						</div>
-					{/each}
-				</div>
+				{#if entry.body}
+					<div class="mt-3 text-sm text-ink-secondary">
+						{@html renderBody(entry.body)}
+					</div>
+				{/if}
+				<a
+					href={entry.url}
+					target="_blank"
+					rel="noopener"
+					class="mt-3 inline-flex items-center gap-1 text-xs text-ink-muted hover:text-accent transition-colors"
+				>
+					View on GitHub
+					<ExternalLink size={11} />
+				</a>
 			</article>
 		{/each}
 
 		{#if filteredEntries.length === 0}
 			<div class="py-8 text-center text-sm text-ink-muted">
-				<p>No entries for this platform yet.</p>
+				<p>No releases yet for this platform.</p>
 			</div>
 		{/if}
-
-		<div class="py-8 text-center text-sm text-ink-muted">
-			<p>More updates coming soon. Stay tuned!</p>
-		</div>
 	</div>
 </div>

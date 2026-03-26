@@ -6,10 +6,9 @@
 		Music,
 		Upload,
 		Chrome,
-		Globe,
 		BookOpen
 	} from 'lucide-svelte';
-	import { CHROME_STORE_URL, FIREFOX_STORE_URL } from '$lib/constants';
+	import { CHROME_STORE_URL } from '$lib/constants';
 
 	type Feature = {
 		title: string;
@@ -108,13 +107,6 @@
 					>
 						<Chrome class="h-4 w-4" />
 						Chrome Listing
-					</a>
-					<a
-						href={FIREFOX_STORE_URL}
-						class="inline-flex items-center justify-center gap-2 rounded-button border border-border px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-surface-1"
-					>
-						<Globe class="h-4 w-4" />
-						Firefox Listing
 					</a>
 				</div>
 
