@@ -3,6 +3,28 @@ import type { RequestHandler } from './$types';
 
 const GITHUB_REPO = 'lovelofi/desktop';
 const CACHE_TTL_SECONDS = 300; // 5 minutes
+const PROXY_BASE = 'https://lovelofi.app/api/releases/download';
+
+/**
+ * Rewrite GitHub release download URLs to go through our proxy,
+ * since the repo is private and GitHub returns 404 for unauthenticated requests.
+ */
+function rewriteUrls(manifest: Record<string, unknown>): Record<string, unknown> {
+	const platforms = manifest.platforms as Record<string, { url?: string }> | undefined;
+	if (!platforms) return manifest;
+
+	for (const platform of Object.values(platforms)) {
+		if (platform.url && typeof platform.url === 'string') {
+			// Extract the filename from the GitHub URL
+			const filename = platform.url.split('/').pop();
+			if (filename) {
+				platform.url = `${PROXY_BASE}/${filename}`;
+			}
+		}
+	}
+
+	return manifest;
+}
 
 export const GET: RequestHandler = async ({ platform }) => {
 	const token = platform?.env?.GITHUB_TOKEN;
@@ -53,7 +75,7 @@ export const GET: RequestHandler = async ({ platform }) => {
 
 		const manifest = await assetRes.json();
 
-		return json(manifest, {
+		return json(rewriteUrls(manifest), {
 			headers: {
 				'Cache-Control': `public, max-age=${CACHE_TTL_SECONDS}`,
 			},
