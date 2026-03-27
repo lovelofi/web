@@ -1,0 +1,184 @@
+{
+  "version": 2,
+  "updatedAt": "2026-03-26",
+  "baseUrl": "https://lovelofi.app/ambient",
+  "maxLayers": 4,
+  "sounds": [
+    {
+      "id": "rain-1",
+      "name": "Steady Rain",
+      "category": "nature",
+      "tier": "free",
+      "fileName": "rain-1.mp3",
+      "group": "rain",
+      "variantLabel": "Steady"
+    },
+    {
+      "id": "rain-2",
+      "name": "Heavy Rain",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "rain-2.mp3",
+      "group": "rain",
+      "variantLabel": "Heavy"
+    },
+    {
+      "id": "fire-1",
+      "name": "Fireplace",
+      "category": "cozy",
+      "tier": "free",
+      "fileName": "fire-1.mp3",
+      "group": "fire",
+      "variantLabel": "Crackle"
+    },
+    {
+      "id": "fire-2",
+      "name": "Roaring Fire",
+      "category": "cozy",
+      "tier": "premium",
+      "fileName": "fire-2.mp3",
+      "group": "fire",
+      "variantLabel": "Roaring"
+    },
+    {
+      "id": "cafe-1",
+      "name": "Cafe Chatter",
+      "category": "social",
+      "tier": "premium",
+      "fileName": "cafe-1.mp3",
+      "group": "cafe",
+      "variantLabel": "Busy"
+    },
+    {
+      "id": "cafe-2",
+      "name": "Quiet Cafe",
+      "category": "social",
+      "tier": "premium",
+      "fileName": "cafe-2.mp3",
+      "group": "cafe",
+      "variantLabel": "Quiet"
+    },
+    {
+      "id": "cafe-3",
+      "name": "Cafe Ambience",
+      "category": "social",
+      "tier": "premium",
+      "fileName": "cafe-3.mp3",
+      "group": "cafe",
+      "variantLabel": "Ambience"
+    },
+    {
+      "id": "thunder-1",
+      "name": "Thunderstorm",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "thunder-1.mp3",
+      "group": "thunder",
+      "variantLabel": "Distant"
+    },
+    {
+      "id": "thunder-2",
+      "name": "Close Thunder",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "thunder-2.mp3",
+      "group": "thunder",
+      "variantLabel": "Close"
+    },
+    {
+      "id": "waves-1",
+      "name": "Ocean Waves",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "waves-1.mp3",
+      "group": "waves",
+      "variantLabel": "Gentle"
+    },
+    {
+      "id": "waves-2",
+      "name": "Crashing Waves",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "waves-2.mp3",
+      "group": "waves",
+      "variantLabel": "Crashing"
+    },
+    {
+      "id": "waves-3",
+      "name": "Beach Waves",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "waves-3.mp3",
+      "group": "waves",
+      "variantLabel": "Beach"
+    },
+    {
+      "id": "wind-1",
+      "name": "Wind",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "wind-1.mp3"
+    },
+    {
+      "id": "birds-1",
+      "name": "Birdsong",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "birds-1.mp3",
+      "group": "birds",
+      "variantLabel": "Forest"
+    },
+    {
+      "id": "birds-2",
+      "name": "Morning Birds",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "birds-2.mp3",
+      "group": "birds",
+      "variantLabel": "Morning"
+    },
+    {
+      "id": "birds-3",
+      "name": "Tropical Birds",
+      "category": "nature",
+      "tier": "premium",
+      "fileName": "birds-3.mp3",
+      "group": "birds",
+      "variantLabel": "Tropical"
+    },
+    {
+      "id": "keyboard-1",
+      "name": "Keyboard Typing",
+      "category": "focus",
+      "tier": "premium",
+      "fileName": "keyboard-1.mp3",
+      "group": "keyboard",
+      "variantLabel": "Mechanical"
+    },
+    {
+      "id": "keyboard-2",
+      "name": "Soft Keyboard",
+      "category": "focus",
+      "tier": "premium",
+      "fileName": "keyboard-2.mp3",
+      "group": "keyboard",
+      "variantLabel": "Soft"
+    },
+    {
+      "id": "keyboard-3",
+      "name": "Fast Typing",
+      "category": "focus",
+      "tier": "premium",
+      "fileName": "keyboard-3.mp3",
+      "group": "keyboard",
+      "variantLabel": "Fast"
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "category": "focus",
+      "tier": "premium",
+      "fileName": "office.mp3"
+    }
+  ]
+}
