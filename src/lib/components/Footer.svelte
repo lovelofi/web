@@ -24,7 +24,7 @@
 				<ul class="space-y-2 text-sm text-ink-tertiary">
 					<li><a href="/#features" class="hover:text-accent">Features</a></li>
 					<li><a href="/#pricing" class="hover:text-accent">Pricing</a></li>
-					<li><a href="/#demo" class="hover:text-accent">Demo</a></li>
+					<li><a href="/library" class="hover:text-accent">Preset Library</a></li>
 					<li><a href="/changelog" class="hover:text-accent">Changelog</a></li>
 				</ul>
 			</div>

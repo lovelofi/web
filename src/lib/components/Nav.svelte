@@ -6,7 +6,7 @@
 
 	const links = [
 		{ href: '/#features', label: 'Features' },
-		{ href: '/#demo', label: 'Demo' },
+		{ href: '/library', label: 'Preset Library' },
 		{ href: '/#pricing', label: 'Pricing' },
 		{ href: '/#faq', label: 'FAQ' },
 		{ href: '/docs', label: 'Docs' },

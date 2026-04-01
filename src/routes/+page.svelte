@@ -215,6 +215,15 @@
 <section class="border-t border-border-soft bg-surface-1">
 	<InView>
 		<AudioDemo />
+		<div class="mx-auto max-w-6xl px-4 pb-14 text-center sm:px-6">
+			<a
+				href="/library"
+				class="btn-lift inline-flex items-center gap-2 rounded-button border border-border bg-surface-2 px-5 py-3 text-sm font-semibold text-ink hover:bg-surface-0"
+			>
+				Browse the full preset library
+				<ChevronDown class="h-4 w-4 -rotate-90" />
+			</a>
+		</div>
 	</InView>
 </section>
 
