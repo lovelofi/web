@@ -1,0 +1,1672 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-27T01:00:00.000Z",
+  "packs": [
+    {
+      "id": "rainy-night",
+      "name": "Rainy Night Pack",
+      "description": "Late-night warmth, softened highs, and rain-soaked room tone.",
+      "tier": "premium",
+      "featured": true,
+      "presets": [
+        {
+          "id": "windowlight",
+          "name": "Windowlight",
+          "description": "Soft rain texture with muted warmth and close indoor glow.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 38
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 20,
+              "profile": "room"
+            },
+            "vinylCrackle": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 2,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -3,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "midnight-cafe",
+          "name": "Midnight Cafe",
+          "description": "A softer cafe speaker bloom with dust and low-light intimacy.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 42
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 24,
+              "profile": "cassette"
+            },
+            "vinylCrackle": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 5
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -2,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 2,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -3,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -6,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "street-reflections",
+          "name": "Street Reflections",
+          "description": "Wider late-night rain with a touch more space and motion.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 34
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 34,
+              "profile": "hall"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -4,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "late-study",
+      "name": "Late Study Pack",
+      "description": "Focused, low-fatigue tones for reading, writing, and long work sessions.",
+      "tier": "free",
+      "featured": true,
+      "presets": [
+        {
+          "id": "lamp-glow",
+          "name": "Lamp Glow",
+          "description": "Warm, steady, and clear enough for long reading sessions.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 28
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 16,
+              "profile": "studio"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "page-turner",
+          "name": "Page Turner",
+          "description": "A slightly darker study bed with less bite and more low-mid warmth.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 32
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 18,
+              "profile": "room"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 6
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -3,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "quiet-stack",
+          "name": "Quiet Stack",
+          "description": "Low-motion, lightly softened tone for staying present without distraction.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 6
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 12,
+              "profile": "studio"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 0,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sunday-morning",
+      "name": "Sunday Morning Pack",
+      "description": "Easygoing warmth, soft light, and clean cozy tones for slow starts.",
+      "tier": "free",
+      "featured": true,
+      "presets": [
+        {
+          "id": "porchlight",
+          "name": "Porchlight",
+          "description": "Gentle top-end rolloff with airy room warmth.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 20
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 18,
+              "profile": "studio"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 0,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -0.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -1.5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "kettle-steam",
+          "name": "Kettle Steam",
+          "description": "Softened highs and a little bloom for calm, domestic listening.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 16,
+              "profile": "room"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "linen-sheets",
+          "name": "Linen Sheets",
+          "description": "Quiet, low-motion warmth for reading and half-awake mornings.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 6
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 12,
+              "profile": "studio"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 0,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -0.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -1,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tape-dreams",
+      "name": "Tape Dreams Pack",
+      "description": "More stylized cassette wear, wow, and degraded late-night nostalgia.",
+      "tier": "premium",
+      "featured": true,
+      "presets": [
+        {
+          "id": "soft-chew",
+          "name": "Soft Chew",
+          "description": "Worn tape with gentle chew, softened highs, and a sleepy pitch drift.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 30
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "pitchWobble": {
+              "enabled": true,
+              "intensity": 16
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -3,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -6,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "faded-polaroid",
+          "name": "Faded Polaroid",
+          "description": "Hazy, slightly washed cassette nostalgia with a small room blur.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 34
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 20
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 18,
+              "profile": "cassette"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -2,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "battery-low",
+          "name": "Battery Low",
+          "description": "Heavier wow, thinning bandwidth, and a slightly dragging tape feel.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 36
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 32
+            },
+            "pitchWobble": {
+              "enabled": true,
+              "intensity": 22
+            },
+            "slowdown": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -4,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -3,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -7,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "city-lights",
+      "name": "City Lights Pack",
+      "description": "Glossy evening tones with a little width, shimmer, and reflected neon air.",
+      "tier": "premium",
+      "featured": false,
+      "presets": [
+        {
+          "id": "blue-neon",
+          "name": "Blue Neon",
+          "description": "Clean late-evening width with softened presence and reflective room gloss.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 22
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 24,
+              "profile": "hall"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2.5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "train-window",
+          "name": "Train Window",
+          "description": "Slightly darker and more distant, like watching lights pass from the seat by the glass.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 28
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 28,
+              "profile": "room"
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1.5,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -3,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "crosswalk",
+          "name": "Crosswalk",
+          "description": "Brighter motion and subtle grit for an awake but still dreamy city-night feel.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "vinylCrackle": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "radio-ghosts",
+      "name": "Radio Ghosts Pack",
+      "description": "Narrow-band haze, papery mids, station grit, and haunted distance.",
+      "tier": "premium",
+      "featured": true,
+      "presets": [
+        {
+          "id": "numbers-station",
+          "name": "Numbers Station",
+          "description": "Thin bandwidth, dry mids, and old-transmitter fatigue.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 58
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 34
+            },
+            "bitcrusher": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "dropout": {
+              "enabled": true,
+              "intensity": 6
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -6,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": -1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 2,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -9,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "night-scan",
+          "name": "Night Scan",
+          "description": "A darker, drifty radio tone with static and unstable tuning.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 54
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 28
+            },
+            "vinylCrackle": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "pitchWobble": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "dropout": {
+              "enabled": true,
+              "intensity": 5
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -5,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -8,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "hallway-speaker",
+          "name": "Hallway Speaker",
+          "description": "Muffled PA spill with a little reverb and radio-band limitation.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 50
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 22
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 16,
+              "profile": "room"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -4,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -7,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "underwater-dreams",
+      "name": "Underwater Dreams Pack",
+      "description": "Submerged, blurred, drifting presets for the more surreal side of the library.",
+      "tier": "premium",
+      "featured": true,
+      "presets": [
+        {
+          "id": "pool-floor",
+          "name": "Pool Floor",
+          "description": "Heavy filtering, slow modulation, and distant submerged bloom.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 66
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 30
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 48,
+              "profile": "hall"
+            },
+            "slowdown": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 2,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -3,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -6,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -12,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "glass-tank",
+          "name": "Glass Tank",
+          "description": "A more reflective submerged tone with a wavering stereo field.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 60
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 26
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 18
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 36,
+              "profile": "room"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -2,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -10,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "sunken-tape",
+          "name": "Sunken Tape",
+          "description": "Waterlogged cassette drift with muffled hiss and sinking pitch.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 62
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 16
+            },
+            "pitchWobble": {
+              "enabled": true,
+              "intensity": 16
+            },
+            "slowdown": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": 1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -2,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -11,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital-decay",
+      "name": "Digital Decay Pack",
+      "description": "Crunch, aliasing, VHS wear, and broken-digital color for more stylized listening.",
+      "tier": "premium",
+      "featured": false,
+      "presets": [
+        {
+          "id": "checksum",
+          "name": "Checksum",
+          "description": "Cleanly degraded with crunchy edges and low-fi digital shadow.",
+          "settings": {
+            "bitcrusher": {
+              "enabled": true,
+              "intensity": 34
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 16,
+              "profile": "studio"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -2,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -3,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "tracking-error",
+          "name": "Tracking Error",
+          "description": "VHS-style drift, dropout, and softened video-tape highs.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 36
+            },
+            "bitcrusher": {
+              "enabled": true,
+              "intensity": 22
+            },
+            "pitchWobble": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 20
+            },
+            "dropout": {
+              "enabled": true,
+              "intensity": 7
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -2,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -2,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "pixel-rain",
+          "name": "Pixel Rain",
+          "description": "A softer, dreamy digital crunch with more shimmer than damage.",
+          "settings": {
+            "bitcrusher": {
+              "enabled": true,
+              "intensity": 28
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 22,
+              "profile": "hall"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2.5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "strange-rooms",
+      "name": "Strange Rooms Pack",
+      "description": "Small-world acoustics and odd spaces for more scene-driven presets.",
+      "tier": "free",
+      "featured": false,
+      "presets": [
+        {
+          "id": "tiled-stairwell",
+          "name": "Tiled Stairwell",
+          "description": "Short reflective room tone with a cold tiled slap.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 24
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 28,
+              "profile": "room"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -0.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -1.5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "laundromat",
+          "name": "Laundromat",
+          "description": "Soft speaker warmth with a smeared fluorescent room feel.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 32
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 20,
+              "profile": "room"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -3,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "elevator-camera",
+          "name": "Elevator Camera",
+          "description": "Narrow, slightly uncanny speaker tone with reflective metal walls.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 46
+            },
+            "highPass": {
+              "enabled": true,
+              "intensity": 20
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 14,
+              "profile": "spring"
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -4,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "after-hours",
+      "name": "After Hours Pack",
+      "description": "Softer club-adjacent evening presets with motion, glow, and low-lit distance.",
+      "tier": "premium",
+      "featured": false,
+      "presets": [
+        {
+          "id": "velvet-rope",
+          "name": "Velvet Rope",
+          "description": "Dim room glow with slightly wider motion and restrained sparkle.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 26
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 24,
+              "profile": "hall"
+            },
+            "chorus": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "last-call",
+          "name": "Last Call",
+          "description": "A darker, more tired room with softened detail and analog drag.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 34
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 14
+            },
+            "reverb": {
+              "enabled": true,
+              "intensity": 20,
+              "profile": "room"
+            },
+            "slowdown": {
+              "enabled": true,
+              "intensity": 10
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1.5,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": -0.5,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1.5,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -3,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "closing-time-sign",
+          "name": "Closing Time Sign",
+          "description": "Small-room haze with a little speaker grit and faded neon air.",
+          "settings": {
+            "lowPass": {
+              "enabled": true,
+              "intensity": 30
+            },
+            "tapeSaturation": {
+              "enabled": true,
+              "intensity": 12
+            },
+            "vinylCrackle": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "stereoDrift": {
+              "enabled": true,
+              "intensity": 8
+            },
+            "equalizer": {
+              "enabled": true,
+              "bands": [
+                {
+                  "freq": 90,
+                  "gain": -1,
+                  "q": 0.9
+                },
+                {
+                  "freq": 250,
+                  "gain": 1,
+                  "q": 1.0
+                },
+                {
+                  "freq": 1000,
+                  "gain": 0,
+                  "q": 1.0
+                },
+                {
+                  "freq": 3500,
+                  "gain": -1,
+                  "q": 1.1
+                },
+                {
+                  "freq": 9000,
+                  "gain": -2.5,
+                  "q": 0.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

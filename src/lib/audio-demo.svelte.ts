@@ -1,4 +1,4 @@
-import type { DemoPreset } from './constants';
+import { DEMO_PRESETS, type DemoPreset, type PresetEffects } from './constants';
 
 /**
  * Full Web Audio engine for the landing page demo.
@@ -300,6 +300,10 @@ let vocalCutNode: AudioWorkletNode | null = null;
 // Reactive state
 let isPlaying = $state(false);
 let currentPresetId = $state('off');
+let currentPresetName = $state(DEMO_PRESETS[0]?.name ?? 'Clean');
+let currentPresetDescription = $state(DEMO_PRESETS[0]?.description ?? 'No effects');
+let currentEffects = $state<PresetEffects>(DEMO_PRESETS[0]?.effects ?? ({} as PresetEffects));
+let currentCollectionName = $state<string | null>(null);
 let volume = $state(0.75);
 
 // ─── Effect application (matching extension's setIntensity methods exactly) ───
@@ -467,6 +471,18 @@ export function getDemoState() {
 		get currentPresetId() {
 			return currentPresetId;
 		},
+		get currentPresetName() {
+			return currentPresetName;
+		},
+		get currentPresetDescription() {
+			return currentPresetDescription;
+		},
+		get currentEffects() {
+			return currentEffects;
+		},
+		get currentCollectionName() {
+			return currentCollectionName;
+		},
 		get volume() {
 			return volume;
 		},
@@ -626,8 +642,12 @@ export function getDemoState() {
 			if (outputGain) outputGain.gain.value = v;
 		},
 
-		applyPreset(preset: DemoPreset) {
+		applyPreset(preset: DemoPreset & { collectionName?: string | null }) {
 			currentPresetId = preset.id;
+			currentPresetName = preset.name;
+			currentPresetDescription = preset.description;
+			currentEffects = preset.effects;
+			currentCollectionName = preset.collectionName ?? null;
 			const e = preset.effects;
 			applyLowPass(e.lowPass.enabled, e.lowPass.intensity);
 			applyHighPass(e.highPass.enabled, e.highPass.intensity);
@@ -678,6 +698,10 @@ export function getDemoState() {
 			_initialized = false;
 			isPlaying = false;
 			currentPresetId = 'off';
+			currentPresetName = DEMO_PRESETS[0]?.name ?? 'Clean';
+			currentPresetDescription = DEMO_PRESETS[0]?.description ?? 'No effects';
+			currentEffects = DEMO_PRESETS[0]?.effects ?? ({} as PresetEffects);
+			currentCollectionName = null;
 		},
 	};
 }

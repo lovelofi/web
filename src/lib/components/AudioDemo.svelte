@@ -1,13 +1,34 @@
 <script lang="ts">
-	import { Play, Pause, Volume2, Loader } from 'lucide-svelte';
+	import { Play, Pause, Volume2, Loader, Package2 } from 'lucide-svelte';
 	import { getDemoState } from '$lib/audio-demo.svelte';
-	import { DEMO_PRESETS, type PresetEffects } from '$lib/constants';
+	import { DEMO_PRESETS, type DemoPreset, type PresetEffects } from '$lib/constants';
 	import { onMount } from 'svelte';
+
+	type DemoPackPreset = DemoPreset & {
+		collectionName?: string;
+	};
+
+	type DemoPack = {
+		id: string;
+		name: string;
+		tier: 'free' | 'premium';
+		presets: DemoPackPreset[];
+	};
+
+	type DemoPackSection = {
+		id: string;
+		label: string;
+		description: string;
+		packs: DemoPack[];
+	};
+
+	let { packSections = [] }: { packSections?: DemoPackSection[] } = $props();
 
 	const demo = getDemoState();
 	let audioEl: HTMLAudioElement | undefined = $state();
 	let initialized = $state(false);
 	let loading = $state(false);
+	let selectedPackSectionId = $state<string | null>(null);
 
 	/** Lo-fi hip-hop station (Radio Record Lo-Fi — ad-free Icecast stream) */
 	const DEMO_STREAM_URL = 'https://radiorecord.hostingradio.ru/lofi96.aacp';
@@ -31,6 +52,17 @@
 		return () => demo.destroy();
 	});
 
+	$effect(() => {
+		if (packSections.length === 0) {
+			selectedPackSectionId = null;
+			return;
+		}
+
+		if (!selectedPackSectionId || !packSections.some((section) => section.id === selectedPackSectionId)) {
+			selectedPackSectionId = packSections[0]?.id ?? null;
+		}
+	});
+
 	async function handlePlay() {
 		if (!initialized && audioEl) {
 			loading = true;
@@ -50,10 +82,22 @@
 		demo.applyPreset(preset);
 	}
 
+	function selectPackPreset(preset: DemoPackPreset) {
+		demo.applyPreset(preset);
+	}
+
 	// Count active effects for a preset
 	function activeEffectCount(effects: PresetEffects): number {
 		return Object.values(effects).filter((e) => e.enabled).length;
 	}
+
+	function isPackPresetActive(preset: DemoPackPreset): boolean {
+		return demo.currentPresetId === preset.id;
+	}
+
+	let activePackSection = $derived(
+		packSections.find((section) => section.id === selectedPackSectionId) ?? packSections[0],
+	);
 </script>
 
 <section id="demo" class="py-20">
@@ -104,8 +148,7 @@
 							<span
 								class="inline-block h-2 w-2 animate-glow rounded-full bg-success"
 							></span>
-							Playing &mdash; {DEMO_PRESETS.find((p) => p.id === demo.currentPresetId)
-								?.name ?? 'Clean'}
+							Playing &mdash; {demo.currentPresetName}
 						{:else}
 							Lo-fi hip-hop &middot; Press play to start
 						{/if}
@@ -127,6 +170,15 @@
 					/>
 				</div>
 			</div>
+
+			{#if demo.currentPresetId !== 'off' && demo.currentCollectionName}
+				<div class="mt-5 rounded-card border border-accent/20 bg-accent-soft/60 px-4 py-3">
+					<p class="text-xs font-semibold uppercase tracking-wider text-accent">Active Pack Preset</p>
+					<p class="mt-1 text-sm text-ink">
+						<span class="font-medium">{demo.currentPresetName}</span> from {demo.currentCollectionName}
+					</p>
+				</div>
+			{/if}
 
 			<!-- Preset selector -->
 			<div class="mt-6">
@@ -152,37 +204,96 @@
 					{/each}
 				</div>
 				{#if demo.currentPresetId !== 'off'}
-					{@const preset = DEMO_PRESETS.find((p) => p.id === demo.currentPresetId)}
-					{#if preset}
-						<p class="mt-3 text-sm text-ink-tertiary">
-							{preset.description}
-						</p>
-					{/if}
+					<p class="mt-3 text-sm text-ink-tertiary">
+						{demo.currentPresetDescription}
+					</p>
 				{/if}
 			</div>
 
-			<!-- Effect indicators -->
-			{#if demo.currentPresetId !== 'off'}
-				{@const preset = DEMO_PRESETS.find((p) => p.id === demo.currentPresetId)}
-				{#if preset}
+			{#if activePackSection}
+				<div class="mt-6 rounded-card border border-border-soft bg-surface-1 p-4 sm:p-5">
+					<div class="flex flex-wrap items-center justify-between gap-3">
+						<div>
+							<p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+								<Package2 class="h-3.5 w-3.5 text-accent" />
+								Pack Presets
+							</p>
+							<p class="mt-2 text-sm text-ink-tertiary">
+								Try hosted pack presets right here without leaving the player.
+							</p>
+						</div>
+						<p class="text-xs text-ink-muted">{activePackSection.packs.length} packs loaded</p>
+					</div>
+
 					<div class="mt-4 flex flex-wrap gap-2">
-						{#each EFFECT_LABELS as { key, label }}
-							{@const effect = preset.effects[key]}
-							<div
-								class="flex items-center gap-2 rounded-sm px-3 py-1.5 text-xs {effect.enabled
-									? 'bg-accent-soft text-accent'
-									: 'bg-surface-1 text-ink-muted'}"
+						{#each packSections as section}
+							<button
+								onclick={() => (selectedPackSectionId = section.id)}
+								class="rounded-pill border px-3 py-1.5 text-sm font-medium transition-all {selectedPackSectionId ===
+								section.id
+									? 'border-accent bg-accent-soft text-accent'
+									: 'border-border bg-surface-2 text-ink-secondary hover:border-accent-muted hover:text-ink'}"
 							>
-								<span
-									class="h-1.5 w-1.5 rounded-full {effect.enabled
-										? 'bg-accent'
-										: 'bg-ink-muted'}"
-								></span>
-								{label}{effect.enabled ? `: ${effect.intensity}%` : ''}
+								{section.label}
+							</button>
+						{/each}
+					</div>
+
+					<p class="mt-4 text-sm text-ink-tertiary">{activePackSection.description}</p>
+
+					<div class="mt-4 grid gap-4 lg:grid-cols-2">
+						{#each activePackSection.packs as pack}
+							<div class="rounded-card border border-border bg-surface-2 p-4">
+								<div class="flex items-center justify-between gap-3">
+									<div class="flex items-center gap-2">
+										<h3 class="font-medium text-ink">{pack.name}</h3>
+										<span class="rounded-pill px-2 py-1 text-[11px] font-medium {pack.tier === 'premium' ? 'bg-accent-soft text-accent' : 'border border-border-soft bg-surface-0 text-ink-secondary'}">
+											{pack.tier === 'premium' ? 'Premium' : 'Free'}
+										</span>
+									</div>
+									<span class="text-xs text-ink-muted">{pack.presets.length} presets</span>
+								</div>
+
+								<div class="mt-3 flex flex-wrap gap-2">
+									{#each pack.presets as preset}
+										<button
+											onclick={() => selectPackPreset(preset)}
+											class="rounded-pill border px-2.5 py-1 text-xs font-medium transition-all {isPackPresetActive(
+												preset,
+											)
+												? 'border-accent bg-accent-soft text-accent'
+												: 'border-border bg-surface-0 text-ink-secondary hover:border-accent-muted hover:text-ink'}"
+										>
+											{preset.name}
+											<span class="ml-1 opacity-60">{activeEffectCount(preset.effects)}</span>
+										</button>
+									{/each}
+								</div>
 							</div>
 						{/each}
 					</div>
-				{/if}
+				</div>
+			{/if}
+
+			<!-- Effect indicators -->
+			{#if demo.currentPresetId !== 'off'}
+				<div class="mt-4 flex flex-wrap gap-2">
+					{#each EFFECT_LABELS as { key, label }}
+						{@const effect = demo.currentEffects[key]}
+						<div
+							class="flex items-center gap-2 rounded-sm px-3 py-1.5 text-xs {effect.enabled
+								? 'bg-accent-soft text-accent'
+								: 'bg-surface-1 text-ink-muted'}"
+						>
+							<span
+								class="h-1.5 w-1.5 rounded-full {effect.enabled
+									? 'bg-accent'
+									: 'bg-ink-muted'}"
+							></span>
+							{label}{effect.enabled ? `: ${effect.intensity}%` : ''}
+						</div>
+					{/each}
+				</div>
 			{/if}
 		</div>
 
